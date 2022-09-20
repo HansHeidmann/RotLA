@@ -1,33 +1,35 @@
 import javax.swing.*;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Adventurer {
 
     String type;
     Boolean alive;
-    Integer currentRoll;
     Integer damage;
     Integer treasuresFound;
     Room currentRoom;
-    BoardRenderer renderer;
 
     public Adventurer() {
         alive = true;
-        damage = 3;
+        damage = 0;
         treasuresFound = 0;
     }
 
-    private int rollDice() {
-        return ((int)(Math.random() * 6) + 1); // cast as int for return
+    public int rollDice() {
+        return ((int)(Math.random() * 12) + 1); // Two 6-sided dice
     }
 
-    private void takeTurn() {
+    public void takeTurn() {
         move();
-        int currentRoll = rollDice();
-        if(checkForEnemy() != null) {
-            fight(currentRoll);
+        if (currentRoom.creatures.size() > 0) { // if there is at least one enemy
+            for (Creature creature: currentRoom.creatures) {
+                if (!currentRoom.renderer.gameOver) {
+                    fight(creature, rollDice(), creature.rollDice());
+                }
+            }
         } else {
-            searchForTreasure();
+            searchForTreasure(rollDice());
         }
     }
 
@@ -37,21 +39,44 @@ public class Adventurer {
         int randomAdjacentRoomIndex = (int)(Math.random() * numberOfAdjacentRooms);
 
         Room previousRoom = currentRoom;
+        previousRoom.removeAdventurer(this);
 
         currentRoom = adjacentRooms.get(randomAdjacentRoomIndex);
+        currentRoom.addAdventurer(this);
 
-        System.out.println("An Adventurer moved from: " + previousRoom.id + " to " + currentRoom.id);
+        System.out.println(type + " moved from: " + previousRoom.id + " to " + currentRoom.id);
     }
 
-    private Creature checkForEnemy(){
-        return null;
+    public void fight(Creature creature, int adventurerRoll, int creatureRoll) {
+        System.out.println("***** BATTLE *****");
+        System.out.println("Room ID: " + currentRoom.id);
+        System.out.println("Room Creatures: " + currentRoom.creatures);
+        System.out.println(type + " fighting " + creature);
+        if (adventurerRoll > creatureRoll) {
+            System.out.println(type + " did 1 damage to " + creature);
+            creature.damage++; // creature dies (all types have 1 health)
+            creature.checkIfDead();
+        } else {
+            System.out.println(creature + " did 1 damage to " + type);
+            damage++; // adventurer takes 1 damage
+        }
+        System.out.println("Room Creatures update: " + currentRoom.creatures);
     }
 
-    private void fight(int roll) {
-
+    private void searchForTreasure(int treasureRoll) {
+        if (treasureRoll >= 10) {
+            treasuresFound++;
+        }
     }
 
-    private void searchForTreasure() {
+    public void checkIfDead() {
+        if (damage == 3) {
+            alive = false;
+            die();
+        }
+    }
 
+    private void die() {
+        alive = false;
     }
 }

@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76528078-6a94-4564-a4dc-334738339c6b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RotLA.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Adventurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blinker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BoardRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Brawler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Creature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Orbiter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Seeker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sneaker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Thief.java" afterDir="false" />
+    <list default="true" id="76528078-6a94-4564-a4dc-334738339c6b" name="Changes" comment="getting started">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Adventurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Adventurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoardRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Brawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Brawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sneaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sneaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Thief.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Thief.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +59,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663428303133</updated>
-      <workItem from="1663428304893" duration="13330000" />
+      <workItem from="1663428304893" duration="31483000" />
     </task>
+    <task id="LOCAL-00001" summary="getting started">
+      <created>1663442302275</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663442302275</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,5 +84,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="getting started" />
+    <option name="LAST_COMMIT_MESSAGE" value="getting started" />
   </component>
 </project>
