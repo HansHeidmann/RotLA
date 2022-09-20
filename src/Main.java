@@ -9,11 +9,13 @@ public class Main {
             renderer.takeTurn();
             // sleep
             try {
-                Thread.sleep(1000);
+                Thread.sleep(100);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
         }
+        renderer.displayGameState();
+        System.out.println(renderer.endMessage);
 
     }
 }

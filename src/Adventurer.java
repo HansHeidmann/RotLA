@@ -59,6 +59,10 @@ public class Adventurer {
         } else {
             System.out.println(creature + " did 1 damage to " + type);
             damage++; // adventurer takes 1 damage
+            if(damage >= 3){
+                die();
+                currentRoom.removeAdventurer(this);
+            }
         }
         System.out.println("Room Creatures update: " + currentRoom.creatures);
     }
