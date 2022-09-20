@@ -23,14 +23,6 @@ public class Room {
         id = roomID;
     }
 
-    public ArrayList<Adventurer> listAdventurers() {
-        return adventurers;
-    }
-
-    public ArrayList<Creature> listCreatures() {
-        return creatures;
-    }
-
     public void addAdventurer(Adventurer adventurer) {
         adventurers.add(adventurer);
     }
@@ -47,8 +39,10 @@ public class Room {
         creatures.remove(creature);
     }
     public void findAdjacentRooms() {
-
-        if(y != 0) { // if it's a room in the 4 floors below ground:
+        if (y == 0) {
+            roomIDs.add("1-1-1");
+        } else {
+            // if it's a room in the 4 floors below ground:
             if (x == 0 && z == 0) { // top left
                 roomIDs.add(y + "-0-1");
                 roomIDs.add(y + "-1-0");
@@ -68,6 +62,12 @@ public class Room {
                 roomIDs.add(y + "-2-0");
             }
             if (x == 1 && z == 1) { // center room
+                if (y > 1) {
+                    roomIDs.add(y-1 + "-1-1");
+                }
+                if(y < 4) {
+                    roomIDs.add((y+1) + "-1-1");
+                }
                 roomIDs.add(y + "-0-1");
                 roomIDs.add(y + "-1-0");
                 roomIDs.add(y + "-1-2");
