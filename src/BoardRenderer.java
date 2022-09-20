@@ -8,6 +8,7 @@ public class BoardRenderer {
     ArrayList<Room> rooms = new ArrayList<>();
     ArrayList<Adventurer> adventurers = new ArrayList<>();
     ArrayList<Creature> creatures = new ArrayList<>();
+    String endMessage;
 
     public BoardRenderer() {
         createRooms();
@@ -17,13 +18,35 @@ public class BoardRenderer {
     }
 
     public void takeTurn() {
+        
+        gameOver = true;
         for (Adventurer adventurer: adventurers) {
-            adventurer.takeTurn();
+            
+            if(adventurer.alive == true){
+                adventurer.takeTurn();
+                gameOver = false;
+            }
+            
+        }
+        if(gameOver == true){
+            endMessage = "all adventurers have been eliminated";
+        }
+        int totalTreasure = 0;
+        for (Adventurer adventurer: adventurers) {
+            totalTreasure += adventurer.treasuresFound;
+            if(totalTreasure >= 10)  {
+                gameOver = true;
+                endMessage = "All treasure found";
+            }
+
         }
         for (Creature creature: creatures) {
             creature.takeTurn();
         }
         turnsTaken++;
+        
+        
+        
         System.out.println("--------------------------------------------");
     }
 
@@ -45,6 +68,11 @@ public class BoardRenderer {
         for(Creature creature: creatures) {
             //System.out.println(creature.type + " - " + creature.treasuresFound + " Treasures(s) - " + creature.damage + " Damage");
         }
+    
+        
+
+        
+        
 
     }
 
