@@ -19,57 +19,72 @@ public class BoardRenderer {
     }
 
     public void takeTurn() {
+
+        turnsTaken++;
         
         gameOver = true;
         for (Adventurer adventurer: adventurers) {
-            
-            if(adventurer.alive == true){
+            if(adventurer.alive) {
                 adventurer.takeTurn();
                 gameOver = false;
             }
-            
         }
-        if(gameOver == true){
+
+        if(gameOver) {
             endMessage = "all adventurers have been eliminated";
         }
+
+        // count up all the adventurers treasure
         int totalTreasure = 0;
         for (Adventurer adventurer: adventurers) {
             totalTreasure += adventurer.treasuresFound;
             if(totalTreasure >= 10)  {
                 gameOver = true;
                 endMessage = "All treasure found";
+                return;
             }
+        }
 
-        }
-        
+        // let all the creatures take their turns
         for (Creature creature: creatures) {
-            creature.takeTurn();
+            if(creature.alive) {
+                creature.takeTurn();
+            }
         }
-        turnsTaken++;
-        
-        
-        
+
         System.out.println("--------------------------------------------");
     }
 
     public void displayGameState() {
         // print turn #
         System.out.println("RotLA Turn " + turnsTaken + ":");
-        // render board
-        
-        for(Room room: rooms) {
-            String adPrint = Arrays.toString(room.adventurers.toArray());
-            adPrint = adPrint.substring(1, adPrint.length() -1);
-            String crPrint = Arrays.toString(room.creatures.toArray());
-            
-            crPrint = crPrint.substring(1, crPrint.length() -1);
 
-            System.out.print(room.id + ": " + adPrint +":"+ crPrint +"\t");
+        // render board
+        for(Room room: rooms) {
+
+            String adPrint = "";
+            for(Adventurer adventurer: room.adventurers) {
+                if(adventurer.alive) {
+                    adPrint += adventurer.type;
+                }
+            }
+            if(adPrint.length() == 0) { adPrint = "-"; }
+
+            String crPrint = "";
+            for(Creature creature: room.creatures) {
+                if(creature.alive) {
+                    crPrint += creature.type;
+                }
+            }
+            if(crPrint.length() == 0) { crPrint = "-"; }
+
+            System.out.print(room.id + ": " + adPrint +" : "+ crPrint +"\t");
             if(room.id.charAt(0) == '0' || room.id.charAt(4) == '2'){
                 System.out.println("");
             }
+
         }
-        
+
         // list adventurers stats
         for(Adventurer adventurer: adventurers) {
             System.out.println(adventurer.type + " - " + adventurer.treasuresFound + " Treasures(s) - " + adventurer.damage + " Damage");
@@ -79,11 +94,6 @@ public class BoardRenderer {
         for(Creature creature: creatures) {
             //System.out.println(creature.type + " - " + creature.treasuresFound + " Treasures(s) - " + creature.damage + " Damage");
         }
-    
-        
-
-        
-        
 
     }
 
@@ -125,22 +135,22 @@ public class BoardRenderer {
         // Brawler
         Adventurer brawler = new Brawler();
         brawler.currentRoom = groundLevelRoom;
-        brawler.type = "Brawler";
+        brawler.type = "B";
         adventurers.add(brawler);
         // Sneaker
         Adventurer sneaker = new Sneaker();
         sneaker.currentRoom = groundLevelRoom;
-        sneaker.type = "Sneaker";
+        sneaker.type = "S";
         adventurers.add(sneaker);
         // Runner
         Adventurer runner = new Runner();
         runner.currentRoom = groundLevelRoom;
-        runner.type = "Runner";
+        runner.type = "R";
         adventurers.add(runner);
         // Thief
         Adventurer thief = new Thief();
         thief.currentRoom = groundLevelRoom;
-        thief.type = "Thief";
+        thief.type = "T";
         adventurers.add(thief);
     }
 
@@ -166,9 +176,10 @@ public class BoardRenderer {
         }
         String roomID = y + "-" + x + "-" + z;
         tempOrbiter.currentRoom = getRoomByID(roomID);
-        tempOrbiter.type = "Orbiter";
+        tempOrbiter.type = "O";
         creatures.add(tempOrbiter);
     }
+
     private void spawnSeeker() {
         // Seeker - starts in any random room on the 4 levels, move to join any *adjacent adventurer on their floor. Will not move if no adjacent adventurer or adventurer is already in their room
         Creature tempSeeker = new Seeker();
@@ -177,7 +188,7 @@ public class BoardRenderer {
         int z = (int)(Math.random() * 3);
         String roomID = y + "-" + x + "-" + z;
         tempSeeker.currentRoom = getRoomByID(roomID);
-        tempSeeker.type = "Seeker";
+        tempSeeker.type = "S";
         creatures.add(tempSeeker);
     }
     private void spawnBlinker() {
@@ -188,7 +199,8 @@ public class BoardRenderer {
         int z = (int)(Math.random() * 3);
         String roomID = y + "-" + x + "-" + z;
         tempBlinker.currentRoom = getRoomByID(roomID);
-        tempBlinker.type = "Blinker";
+        tempBlinker.type = "B";
         creatures.add(tempBlinker);
     }
+
 }
