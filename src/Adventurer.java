@@ -3,7 +3,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 ///
-/// Adventurer << ABSTRACT >>  --- compare with Creature class to see use of Cohesion
+/// Adventurer << ABSTRACT >>  --- compare with Creature class to see the code is very COHESIVE
 ///
 public abstract class Adventurer {
 
@@ -25,10 +25,10 @@ public abstract class Adventurer {
 
     public void takeTurn() {
         move();
-        if (currentRoom.creatures.size() > 0) { // if there is at least one enemy
+        if (currentRoom.creatures.size() > 0) { // if there is at least one creature:
             for (Creature creature: currentRoom.creatures) {
                 if (!currentRoom.renderer.gameOver && creature.alive) {
-                    fight(creature, rollDice(), creature.rollDice());
+                    fight(creature, rollDice(), creature.rollDice()); //  POLYMORPHISM  allows fight to work with all the different subclasses of creature
                 }
             }
         } else {

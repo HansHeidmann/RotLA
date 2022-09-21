@@ -9,6 +9,7 @@ public class Blinker extends Creature {
         gotoRoom(1 + (int) (Math.random() * 4), (int) (Math.random() * 3), (int) (Math.random() * 3));
     }
 
+    // ENCAPSULATION - this private function is encapsulated here and can not be called somewhere else
     private void gotoRoom(int y, int x, int z) {
         Room targetRoom = currentRoom.renderer.getRoomByID(y + "-" + x + "-" + z);
         currentRoom.removeCreature(this);

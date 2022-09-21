@@ -34,7 +34,7 @@ public class Orbiter extends Creature {
         }
 
     }
-
+    // ENCAPSULATION - this private function is encapsulated here and can not be called somewhere else
     private void gotoRoom(int x, int z) {
         int y = currentRoom.y;
         Room targetRoom = currentRoom.renderer.getRoomByID(y + "-" + x + "-" + z);

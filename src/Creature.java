@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 ///
-/// Creature << ABSTRACT >> --- compare with Adventurer class to see use of Cohesion
+/// Creature << ABSTRACT >> --- compare with Adventurer class to see the code is very COHESIVE
 ///
 public abstract class Creature {
     String type;

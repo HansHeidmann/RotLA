@@ -1,6 +1,6 @@
 # RotLA
 - Hans Heidmann
-- Peter
+- Peter Loden
 
 Java Version: 16
 

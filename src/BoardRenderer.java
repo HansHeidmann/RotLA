@@ -13,7 +13,7 @@ public class BoardRenderer {
     Integer deadCreatures;
     String endMessage;
 
-    public BoardRenderer() { // initialize game state
+    public BoardRenderer() { // initialize game state -- ABSTRACTION used to hide the bulk of game initialization within a few short functions
         createRooms();
         findAdjacentRooms();
         spawnAdventurers();
@@ -66,18 +66,13 @@ public class BoardRenderer {
             int totalTreasure = 0;
             for (Adventurer adventurer: adventurers) {
                 totalTreasure += adventurer.treasuresFound;
-                if(totalTreasure >= 10)  {
+                if(totalTreasure >= 50)  {
                     gameOver = true;
                     endMessage = "All treasure found.";
                     return;
                 }
             }
         }
-
-
-
-
-
 
         System.out.println("--------------------------------------------");
     }
@@ -192,6 +187,7 @@ public class BoardRenderer {
 
     private void spawnOrbiter() {
         // Orbiter - starts in a non-center room and orbits (moves circularly clockwise or counter-clockwise) around outer rooms, doesn't move if in room with adventurer
+        // each instance of Orbiter has its own IDENTITY even though it has identical attributes and methods
         Creature tempOrbiter = new Orbiter();
         int y = (int)(Math.random() * 4) + 1;
         int x = (int)(Math.random() * 3);
@@ -209,6 +205,7 @@ public class BoardRenderer {
 
     private void spawnSeeker() {
         // Seeker - starts in any random room on the 4 levels, move to join any *adjacent adventurer on their floor. Will not move if no adjacent adventurer or adventurer is already in their room
+        // each instance of Seeker has its own IDENTITY even though it has identical attributes and methods
         Creature tempSeeker = new Seeker();
         int y = (int)(Math.random() * 4) + 1;
         int x = (int)(Math.random() * 3);
@@ -220,6 +217,7 @@ public class BoardRenderer {
     }
     private void spawnBlinker() {
         // Blinker - always start on level 4 in random room, move randomly to any room in all 4 levels each turn, will not move if in room with adventurer
+        // each instance of Blinker has its own IDENTITY even though it has identical attributes and methods
         Creature tempBlinker = new Blinker();
         int y = 4;
         int x = (int)(Math.random() * 3);
