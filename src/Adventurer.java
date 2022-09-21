@@ -83,4 +83,9 @@ public class Adventurer {
     private void die() {
         alive = false;
     }
+    public String toString(){
+        return type;
+    }
 }
+
+

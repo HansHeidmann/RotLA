@@ -53,5 +53,8 @@ public class Creature {
     private void die() {
         alive = false;
     }
+    public String toString(){
+        return type;
+    }
 
 }

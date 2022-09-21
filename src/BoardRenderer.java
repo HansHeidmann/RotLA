@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Objects;
 
 public class BoardRenderer {
@@ -40,6 +41,7 @@ public class BoardRenderer {
             }
 
         }
+        
         for (Creature creature: creatures) {
             creature.takeTurn();
         }
@@ -54,11 +56,20 @@ public class BoardRenderer {
         // print turn #
         System.out.println("RotLA Turn " + turnsTaken + ":");
         // render board
-        /*
+        
         for(Room room: rooms) {
-            System.out.println(room.id + ": " + "- : -");
+            String adPrint = Arrays.toString(room.adventurers.toArray());
+            adPrint = adPrint.substring(1, adPrint.length() -1);
+            String crPrint = Arrays.toString(room.creatures.toArray());
+            
+            crPrint = crPrint.substring(1, crPrint.length() -1);
+
+            System.out.print(room.id + ": " + adPrint +":"+ crPrint +"\t");
+            if(room.id.charAt(0) == '0' || room.id.charAt(4) == '2'){
+                System.out.println("");
+            }
         }
-        */
+        
         // list adventurers stats
         for(Adventurer adventurer: adventurers) {
             System.out.println(adventurer.type + " - " + adventurer.treasuresFound + " Treasures(s) - " + adventurer.damage + " Damage");
