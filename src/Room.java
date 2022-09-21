@@ -38,7 +38,9 @@ public class Room {
     public void removeCreature(Creature creature) {
         creatures.remove(creature);
     }
+
     public void findAdjacentRooms() {
+
         if (y == 0) {
             roomIDs.add("1-1-1");
         } else {
@@ -99,7 +101,8 @@ public class Room {
                     adjacentRooms.add(room);
                 }
             }
-
         }
+
     }
+
 }
