@@ -19,10 +19,16 @@ public class Creature {
 
     public void takeTurn() {
         move();
-        checkForEnemy();
+        if (currentRoom.adventurers.size() > 0) { // if there is at least one adventurer
+            for (Adventurer adventurer: currentRoom.adventurers) {
+                if (!currentRoom.renderer.gameOver && adventurer.alive) {
+                    fight(adventurer, rollDice(), adventurer.rollDice());
+                }
+            }
+        }
     }
 
-    private void move() {
+    public void move() {
         ArrayList<Room> adjacentRooms = currentRoom.adjacentRooms;
         int numberOfAdjacentRooms = adjacentRooms.size();
         int randomAdjacentRoomIndex = (int)(Math.random() * numberOfAdjacentRooms);
@@ -33,26 +39,35 @@ public class Creature {
         currentRoom = adjacentRooms.get(randomAdjacentRoomIndex);
         currentRoom.addCreature(this);
 
-        System.out.println("A(n) " + type + " moved from: " + previousRoom.id + " to " + currentRoom.id);
+        // System.out.println("A(n) " + type + " moved from: " + previousRoom.id + " to " + currentRoom.id);
     }
 
     private void checkForEnemy(){
         //
     }
 
-    public void fight(Adventurer adventurer, int roll) {
-        System.out.println(type + " fighting " + adventurer);
-    }
+    public void fight(Adventurer adventurer, int creatureRoll, int adventurerRoll) {
+        // System.out.println(type + " fighting " + adventurer);
 
-    public void checkIfDead() {
-        if (damage == 1) {
-            die();
+        if (creatureRoll > adventurerRoll) {
+            // System.out.println(type + " did 1 damage to " + adventurer);
+            adventurer.damage++; // creature dies (all types have 1 health)
+            if(adventurer.damage >= 3) {
+                adventurer.die();
+            }
+        } else {
+            // System.out.println(adventurer + " did 1 damage to " + type);
+            damage++; // adventurer takes 1 damage
+            if(damage >= 1) {
+                die();
+            }
         }
     }
 
-    private void die() {
+    public void die() {
         alive = false;
     }
+
     public String toString(){
         return type;
     }
