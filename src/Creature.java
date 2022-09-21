@@ -1,12 +1,13 @@
 import java.util.ArrayList;
 
-public class Creature {
-
+///
+/// Creature << ABSTRACT >> --- compare with Adventurer class to see use of Cohesion
+///
+public abstract class Creature {
     String type;
     Integer damage;
     Boolean alive;
     Room currentRoom;
-
 
     public Creature() {
         damage = 0;

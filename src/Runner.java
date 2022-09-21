@@ -1,7 +1,9 @@
+///
+/// Runner -> SUBCLASS of Adventurer
+///
 public class Runner extends Adventurer {
     public Runner() {
-
-
+        //
     }
     public void takeTurn() {
         // take 2 turns

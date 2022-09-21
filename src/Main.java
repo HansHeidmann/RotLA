@@ -9,15 +9,15 @@ public class Main {
             renderer.displayGameState();
             renderer.takeTurn();
 
-            // sleep
+            // sleep - optional
             try {
-                Thread.sleep(10);
+                Thread.sleep(1);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
 
         }
-        renderer.displayGameState();
+        renderer.displayGameState(); // display 1 last time when game has ended
         System.out.println(renderer.endMessage);
 
     }

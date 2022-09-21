@@ -1,5 +1,10 @@
+///
+/// Seeker -> SUBCLASS of Creature
+///
 public class Seeker extends Creature {
-
+    public Seeker() {
+        //
+    }
     public void move() {
         if(currentRoom.adventurers.size() == 0) {
             for(Room room: currentRoom.adjacentRooms) {
@@ -7,6 +12,7 @@ public class Seeker extends Creature {
                     currentRoom.removeCreature(this);
                     room.addCreature(this);
                     currentRoom = room;
+                    return;
                 }
             }
         }

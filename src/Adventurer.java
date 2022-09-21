@@ -2,7 +2,10 @@ import javax.swing.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class Adventurer {
+///
+/// Adventurer << ABSTRACT >>  --- compare with Creature class to see use of Cohesion
+///
+public abstract class Adventurer {
 
     String type;
     Boolean alive;

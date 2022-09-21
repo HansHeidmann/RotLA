@@ -9,9 +9,11 @@ public class BoardRenderer {
     ArrayList<Room> rooms = new ArrayList<>();
     ArrayList<Adventurer> adventurers = new ArrayList<>();
     ArrayList<Creature> creatures = new ArrayList<>();
+    Integer deadAdventurers;
+    Integer deadCreatures;
     String endMessage;
 
-    public BoardRenderer() {
+    public BoardRenderer() { // initialize game state
         createRooms();
         findAdjacentRooms();
         spawnAdventurers();
@@ -21,27 +23,18 @@ public class BoardRenderer {
     public void takeTurn() {
 
         turnsTaken++;
-        
-        gameOver = true;
+
+        // reset counters
+        deadAdventurers = 0;
+        deadCreatures = 0;
+
+        // let all the adventurers take their turns
         for (Adventurer adventurer: adventurers) {
             if(adventurer.alive) {
                 adventurer.takeTurn();
                 gameOver = false;
-            }
-        }
-
-        if(gameOver) {
-            endMessage = "all adventurers have been eliminated";
-        }
-
-        // count up all the adventurers treasure
-        int totalTreasure = 0;
-        for (Adventurer adventurer: adventurers) {
-            totalTreasure += adventurer.treasuresFound;
-            if(totalTreasure >= 10)  {
-                gameOver = true;
-                endMessage = "All treasure found";
-                return;
+            } else {
+                deadAdventurers++;
             }
         }
 
@@ -49,8 +42,42 @@ public class BoardRenderer {
         for (Creature creature: creatures) {
             if(creature.alive) {
                 creature.takeTurn();
+                gameOver = false;
+            } else {
+                deadCreatures++;
             }
         }
+
+        // DEBUG
+        // System.out.println("deadAdventurers: " + deadAdventurers);
+        // System.out.println("deadCreatures: " + deadCreatures);
+
+        // check for "game over" game states
+        if (deadAdventurers == 4) {
+            endMessage = "All adventurers have been eliminated.";
+            gameOver = true;
+            return;
+        } else if (deadCreatures == 12) {
+            endMessage = "All creatures have been eliminated.";
+            gameOver = true;
+            return;
+        } else {
+            // count up all the adventurers treasure
+            int totalTreasure = 0;
+            for (Adventurer adventurer: adventurers) {
+                totalTreasure += adventurer.treasuresFound;
+                if(totalTreasure >= 10)  {
+                    gameOver = true;
+                    endMessage = "All treasure found.";
+                    return;
+                }
+            }
+        }
+
+
+
+
+
 
         System.out.println("--------------------------------------------");
     }
@@ -62,21 +89,21 @@ public class BoardRenderer {
         // render board
         for(Room room: rooms) {
 
-            String adPrint = "";
+            StringBuilder adPrint = new StringBuilder();
             for(Adventurer adventurer: room.adventurers) {
                 if(adventurer.alive) {
-                    adPrint += adventurer.type;
+                    adPrint.append(adventurer.type);
                 }
             }
-            if(adPrint.length() == 0) { adPrint = "-"; }
+            if(adPrint.length() == 0) { adPrint = new StringBuilder("-"); }
 
-            String crPrint = "";
+            StringBuilder crPrint = new StringBuilder();
             for(Creature creature: room.creatures) {
                 if(creature.alive) {
-                    crPrint += creature.type;
+                    crPrint.append(creature.type);
                 }
             }
-            if(crPrint.length() == 0) { crPrint = "-"; }
+            if(crPrint.length() == 0) { crPrint = new StringBuilder("-"); }
 
             System.out.print(room.id + ": " + adPrint +" : "+ crPrint +"\t");
             if(room.id.charAt(0) == '0' || room.id.charAt(4) == '2'){

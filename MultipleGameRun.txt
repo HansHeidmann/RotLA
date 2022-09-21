@@ -1,0 +1,36 @@
+1: All treasure found.
+2: All treasure found.
+3: All treasure found.
+4: All treasure found.
+5: All treasure found.
+6: All adventurers have been eliminated.
+7: All treasure found.
+8: All treasure found.
+9: All treasure found.
+10: All treasure found.
+11: All treasure found.
+12: All treasure found.
+13: All treasure found.
+14: All treasure found.
+15: All treasure found.
+16: All treasure found.
+17: All creatures have been eliminated.
+18: All treasure found.
+19: All treasure found.
+20: All treasure found.
+21: All treasure found.
+22: All treasure found.
+23: All treasure found.
+24: All treasure found.
+25: All treasure found.
+26: All treasure found.
+27: All creatures have been eliminated.
+28: All treasure found.
+29: All treasure found.
+30: All treasure found.
+
+Totals:
+1 <-- All adventurers have been eliminated.
+2 <-- All creatures have been eliminated.
+27 <-- All treasure found.
+
