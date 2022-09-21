@@ -4,15 +4,18 @@ public class Main {
         BoardRenderer renderer = new BoardRenderer();
 
         while (!renderer.gameOver) {
+
             // main loop
             renderer.displayGameState();
             renderer.takeTurn();
+
             // sleep
             try {
-                Thread.sleep(100);
+                Thread.sleep(10);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
+
         }
         renderer.displayGameState();
         System.out.println(renderer.endMessage);
