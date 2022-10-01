@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Objects;
 
 ///
 /// Adventurer << ABSTRACT >>  --- compare with Creature class to see the code is very COHESIVE
@@ -11,6 +12,7 @@ public abstract class Adventurer {
     Boolean alive;
     Integer damage;
     Integer treasuresFound;
+    ArrayList<Treasure> inventory = new ArrayList<>();
     Room currentRoom;
 
     public Adventurer() {
@@ -28,7 +30,7 @@ public abstract class Adventurer {
         if (currentRoom.creatures.size() > 0) { // if there is at least one creature:
             for (Creature creature: currentRoom.creatures) {
                 if (!currentRoom.renderer.gameOver && creature.alive) {
-                    fight(creature, rollDice(), creature.rollDice()); //  POLYMORPHISM  allows fight to work with all the different subclasses of creature
+                    //fight(creature, rollDice(), creature.rollDice()); //  POLYMORPHISM  allows fight to work with all the different subclasses of creature
                 }
             }
         } else {
@@ -78,9 +80,32 @@ public abstract class Adventurer {
     }
 
     private void searchForTreasure(int treasureRoll) {
+
+        Treasure treasure;
         if (treasureRoll >= 10) {
-            treasuresFound++;
+
+            if (currentRoom.treasures.size() > 0) {
+                treasure = currentRoom.treasures.get(0);
+                // Damage the Adventurer if it's a Trap, and remove the Trap from the Room, then return
+                if (Objects.equals(treasure.type, "Trap")) {
+                    damage++;
+                    currentRoom.removeTreasure(treasure);
+                    return;
+                }
+                // If the Adventurer already has one of this type of Treasure, return (leave the Treasure for someone else)
+                if (inventory.size() > 0) {
+                    for (Treasure inventoryItem : inventory) {
+                        if (Objects.equals(inventoryItem.type, treasure.type)) {
+                            return;
+                        }
+                    }
+                }
+                // Otherwise, add this Treasure object to Inventory
+                inventory.add(treasure);
+                treasuresFound++;
+            }
         }
+
     }
 
     public void die() {

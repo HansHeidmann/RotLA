@@ -23,7 +23,7 @@ public abstract class Creature {
         if (currentRoom.adventurers.size() > 0) { // if there is at least one adventurer
             for (Adventurer adventurer: currentRoom.adventurers) {
                 if (!currentRoom.renderer.gameOver && adventurer.alive) {
-                    fight(adventurer, rollDice(), adventurer.rollDice());
+                    //fight(adventurer, rollDice(), adventurer.rollDice());
                 }
             }
         }

@@ -16,6 +16,7 @@ public class BoardRenderer {
     public BoardRenderer() { // initialize game state -- ABSTRACTION used to hide the bulk of game initialization within a few short functions
         createRooms();
         findAdjacentRooms();
+        placeTreasures();
         spawnAdventurers();
         spawnCreatures();
     }
@@ -66,7 +67,8 @@ public class BoardRenderer {
             int totalTreasure = 0;
             for (Adventurer adventurer: adventurers) {
                 totalTreasure += adventurer.treasuresFound;
-                if(totalTreasure >= 50)  {
+                // Check if all 20 Treasures have been found (there were 24, but the 4 traps aren't collected)
+                if(totalTreasure == 20)  {
                     gameOver = true;
                     endMessage = "All treasure found.";
                     return;
@@ -142,6 +144,39 @@ public class BoardRenderer {
             for(int x = 0; x <= 2; x++) {
                 for(int z = 0; z <= 2; z++) {
                     rooms.add(new Room(y, x, z, y + "-" + x + "-" + z, this));
+                }
+            }
+        }
+    }
+    private void placeTreasures() {
+        Treasure treasure;
+        int y;
+        int x;
+        int z;
+        String roomID;
+        Room room;
+
+        for (int i=0; i<4; i++) {
+            for (int kind = 0; kind < 6; kind++) {
+                // prepare room vars
+                y = (int)(Math.random() * 4) + 1;
+                x = (int)(Math.random() * 3);
+                z = (int)(Math.random() * 3);
+                roomID = y + "-" + x + "-" + z;
+                room = getRoomByID(roomID);
+                // place 1 of the kind
+                if (kind == 0) {
+                    room.addTreasure(new Sword());
+                } else if (kind == 1) {
+                    room.addTreasure(new Gem());
+                } else if (kind == 2) {
+                    room.addTreasure(new Armor());
+                } else if (kind == 3) {
+                    room.addTreasure(new Portal());
+                } else if (kind == 4) {
+                    room.addTreasure(new Trap());
+                } else {
+                    room.addTreasure(new Potion());
                 }
             }
         }

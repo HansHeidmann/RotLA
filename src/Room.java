@@ -9,6 +9,7 @@ public class Room {
     Integer x;
     Integer z;
     String id;
+    ArrayList<Treasure> treasures = new ArrayList<>();
     ArrayList<Adventurer> adventurers = new ArrayList<>();
     ArrayList<Creature> creatures = new ArrayList<>();
 
@@ -23,22 +24,27 @@ public class Room {
         id = roomID;
     }
 
+    // ADD / REMOVE --- Treasures, Adventurers, and Creatures
+    public void addTreasure(Treasure treasure) {
+        treasures.add(treasure);
+    }
+    public void removeTreasure(Treasure treasure) {
+        treasures.remove(treasure);
+    }
     public void addAdventurer(Adventurer adventurer) {
         adventurers.add(adventurer);
     }
-
     public void removeAdventurer(Adventurer adventurer) {
         adventurers.remove(adventurer);
     }
-
     public void addCreature(Creature creature) {
         creatures.add(creature);
     }
-
     public void removeCreature(Creature creature) {
         creatures.remove(creature);
     }
 
+    // FIND & STORE ADJACENT ROOMS
     public void findAdjacentRooms() {
 
         if (y == 0) {

@@ -2,7 +2,7 @@
 /// Orbiter -> SUBCLASS of Creature
 ///
 public class Orbiter extends Creature {
-    Integer direction;  // 0 - clockwise, 1 - counter-clockwise
+    private final Integer direction;  // 0 - clockwise, 1 - counter-clockwise
     public Orbiter() {
         direction = (int)(Math.random() * 2);
     }
