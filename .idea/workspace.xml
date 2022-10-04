@@ -1,24 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76528078-6a94-4564-a4dc-334738339c6b" name="Changes" comment="Treasure objects added and collectable in inventories, and Trap treasures do 1 damage. &#10;SearchStrategy class and subclasses created but need to be written. CombatStrategy class and subclasses created but need to be written. Decorator and decorations classes created but need to be written.">
+    <list default="true" id="76528078-6a94-4564-a4dc-334738339c6b" name="Changes" comment="CombatAlgorithm working, need to fix glitch where last Orbiter doesn't die">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Adventurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Adventurer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BoardRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Brawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Brawler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CarefulStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarefulStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CarelessStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarelessStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CombatStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CombatAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExpertStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExpertStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QuickStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuickStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sneaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sneaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StealthStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StealthStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Thief.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Thief.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TrainedStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrainedStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UntrainedStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UntrainedStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Orbiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Orbiter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +65,7 @@
       <workItem from="1663886637650" duration="3000" />
       <workItem from="1664042320554" duration="6258000" />
       <workItem from="1664638741565" duration="8281000" />
-      <workItem from="1664902163831" duration="8570000" />
+      <workItem from="1664902163831" duration="12398000" />
     </task>
     <task id="LOCAL-00001" summary="getting started">
       <created>1663442302275</created>
@@ -109,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664645356518</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="CombatAlgorithm working, need to fix glitch where last Orbiter doesn't die">
+      <created>1664911071022</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664911071022</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +125,7 @@
     <MESSAGE value="Identify OO Elements comments" />
     <MESSAGE value="Update README.md" />
     <MESSAGE value="Treasure objects added and collectable in inventories, and Trap treasures do 1 damage. &#10;SearchStrategy class and subclasses created but need to be written. CombatStrategy class and subclasses created but need to be written. Decorator and decorations classes created but need to be written." />
-    <option name="LAST_COMMIT_MESSAGE" value="Treasure objects added and collectable in inventories, and Trap treasures do 1 damage. &#10;SearchStrategy class and subclasses created but need to be written. CombatStrategy class and subclasses created but need to be written. Decorator and decorations classes created but need to be written." />
+    <MESSAGE value="CombatAlgorithm working, need to fix glitch where last Orbiter doesn't die" />
+    <option name="LAST_COMMIT_MESSAGE" value="CombatAlgorithm working, need to fix glitch where last Orbiter doesn't die" />
   </component>
 </project>

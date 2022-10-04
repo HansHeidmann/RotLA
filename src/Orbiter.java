@@ -10,6 +10,7 @@ public class Orbiter extends Creature {
     public void move() {
 
         if(currentRoom.adventurers.size() == 0) { // if there isn't an Adventurer in the current room:
+            System.out.println(type + " NOT MOVING BECAUSE THERE'S AN ADVENTURER !!! ");
 
             int x = currentRoom.x; // current x
             int z = currentRoom.z; // current z
@@ -38,8 +39,8 @@ public class Orbiter extends Creature {
     private void gotoRoom(int x, int z) {
         int y = currentRoom.y;
         Room targetRoom = currentRoom.renderer.getRoomByID(y + "-" + x + "-" + z);
-        currentRoom.removeCreature(this);
         targetRoom.addCreature(this);
+        currentRoom.removeCreature(this);
         currentRoom = targetRoom;
     }
 

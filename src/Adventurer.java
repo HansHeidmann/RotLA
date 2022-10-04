@@ -29,7 +29,9 @@ public abstract class Adventurer {
     public void takeTurn() {
         move();
         if (currentRoom.creatures.size() > 0) { // if there is at least one creature:
+
             for (Creature creature: currentRoom.creatures) {
+                System.out.println(type + " FOUND A FUCKING CREATURE !!! ");
                 if (!currentRoom.renderer.gameOver && creature.alive) {
                     fight(creature); //  POLYMORPHISM  allows fight to work with all the different subclasses of creature
                 }
@@ -58,6 +60,7 @@ public abstract class Adventurer {
         if (!currentRoom.renderer.gameOver && creature.alive) {
             // 50% chance Sneaker doesn't have to fight
             if (Objects.equals(combatStrategy.type, "Stealth") && (int) (Math.random() * 2) == 0) {
+                System.out.println(type + " didn't have to fight.");
                 return;
             }
 
