@@ -1,4 +1,4 @@
-public class CarefulStrategy extends SearchStrategy {
+public class CarefulStrategy extends SearchAlgorithm {
     public CarefulStrategy() {
         this.type = "Careful";
     }

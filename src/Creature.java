@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Objects;
 
 ///
 /// Creature << ABSTRACT >> --- compare with Adventurer class to see the code is very COHESIVE
@@ -14,8 +15,8 @@ public abstract class Creature {
         alive = true;
     }
 
-    public int rollDice() {
-        return ((int)(Math.random() * 12) + 1); // Two 6-sided dice
+    public int rollDice(int treasureModifier) {
+        return ((int)(Math.random() * 12) + 1 + treasureModifier); // Two 6-sided dice
     }
 
     public void takeTurn() {
@@ -47,20 +48,46 @@ public abstract class Creature {
         //
     }
 
-    public void fight(Adventurer adventurer, int creatureRoll, int adventurerRoll) {
-        // System.out.println(type + " fighting " + adventurer);
-
-        if (creatureRoll > adventurerRoll) {
-            // System.out.println(type + " did 1 damage to " + adventurer);
-            adventurer.damage++; // creature dies (all types have 1 health)
-            if(adventurer.damage >= 3) {
-                adventurer.die();
+    public void fight(Adventurer adventurer) {
+        if (!currentRoom.renderer.gameOver && adventurer.alive) {
+            // 50% chance Sneaker doesn't have to fight
+            if (Objects.equals(adventurer.combatStrategy.type, "Stealth") && (int) (Math.random() * 2) == 0) {
+                return;
             }
-        } else {
-            // System.out.println(adventurer + " did 1 damage to " + type);
-            damage++; // adventurer takes 1 damage
-            if(damage >= 1) {
-                die();
+            // DEBUG
+            System.out.println("***** BATTLE *****");
+            System.out.println("Room ID: " + currentRoom.id);
+            System.out.println("Room Creatures: " + currentRoom.creatures);
+            System.out.println(type + " fighting " + adventurer);
+            System.out.println(adventurer.type + " inventory: " + adventurer.inventory);
+
+            int adventurerRollModifier = 0;
+            int creatureRollModifier = 0;
+            for (Treasure treasure : adventurer.inventory) {
+                if (treasure.getClass() == Sword.class) {
+                    adventurerRollModifier++;
+                }
+                if (treasure.getClass() == Gem.class) {
+                    creatureRollModifier++;
+                }
+                if (treasure.getClass() == Armor.class) {
+                    creatureRollModifier--;
+                }
+            }
+            System.out.println(adventurer.type + " roll mod: " + adventurerRollModifier);
+            System.out.println(this.type + " roll mod: " + creatureRollModifier);
+
+
+            if (adventurer.combatStrategy.rollDice(adventurerRollModifier) >= this.rollDice(creatureRollModifier)) {
+                System.out.println(adventurer.type + " did 1 damage to " + this);
+                this.damage++; // creature dies (all types have 1 health)
+                this.die();
+            } else {
+                System.out.println(this + " did 1 damage to " + adventurer.type);
+                adventurer.damage++; // adventurer takes 1 damage
+                if (adventurer.damage >= adventurer.hitPoints) {
+                    adventurer.die();
+                }
             }
         }
     }

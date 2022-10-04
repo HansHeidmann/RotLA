@@ -1,6 +1,7 @@
-public class UntrainedStrategy extends CombatAlgorithm {
-    public UntrainedStrategy() {
-        this.type = "Untrained";
+public class CombatAlgorithm {
+    String type;
+    public CombatAlgorithm() {
+        //
     }
     public int rollDice(int treasureModifier) {
         System.out.println("untrained combat");

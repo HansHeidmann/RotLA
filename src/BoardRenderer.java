@@ -19,6 +19,9 @@ public class BoardRenderer {
         placeTreasures();
         spawnAdventurers();
         spawnCreatures();
+
+        deadAdventurers = 0;
+        deadCreatures = 0;
     }
 
     public void takeTurn() {
@@ -26,6 +29,7 @@ public class BoardRenderer {
         turnsTaken++;
 
         // reset counters
+
         deadAdventurers = 0;
         deadCreatures = 0;
 
@@ -33,6 +37,7 @@ public class BoardRenderer {
         for (Adventurer adventurer: adventurers) {
             if(adventurer.alive) {
                 adventurer.takeTurn();
+                System.out.println("adventurer: " + adventurer.type + " " + adventurer.alive + " " + adventurer.hitPoints + " " + adventurer.inventory);
                 gameOver = false;
             } else {
                 deadAdventurers++;
@@ -43,6 +48,7 @@ public class BoardRenderer {
         for (Creature creature: creatures) {
             if(creature.alive) {
                 creature.takeTurn();
+                System.out.println("creature: " + creature.type + " " + creature.alive + " " + creature.damage);
                 gameOver = false;
             } else {
                 deadCreatures++;
@@ -193,21 +199,37 @@ public class BoardRenderer {
         Adventurer brawler = new Brawler();
         brawler.currentRoom = groundLevelRoom;
         brawler.type = "B";
+        brawler.combatStrategy = new ExpertStrategy();
+        brawler.searchStrategy = new CarelessStrategy();
         adventurers.add(brawler);
+
         // Sneaker
         Adventurer sneaker = new Sneaker();
         sneaker.currentRoom = groundLevelRoom;
         sneaker.type = "S";
+        sneaker.combatStrategy = new StealthStrategy();
+        sneaker.searchStrategy = new QuickStrategy();
         adventurers.add(sneaker);
+
+//        CombatAlgorithm combatAlgorithm = new StealthStrategy();
+//        brawler.combatStrategy = combatAlgorithm;
+//        SearchAlgorithm searchAlgorithm = new QuickStrategy();
+//        brawler.searchStrategy = searchAlgorithm;
+
         // Runner
         Adventurer runner = new Runner();
         runner.currentRoom = groundLevelRoom;
         runner.type = "R";
+        runner.combatStrategy = new UntrainedStrategy();
+        runner.searchStrategy = new QuickStrategy();
         adventurers.add(runner);
+
         // Thief
         Adventurer thief = new Thief();
         thief.currentRoom = groundLevelRoom;
         thief.type = "T";
+        thief.combatStrategy = new TrainedStrategy();
+        thief.searchStrategy = new CarefulStrategy();
         adventurers.add(thief);
     }
 

@@ -1,4 +1,4 @@
-public class QuickStrategy extends SearchStrategy {
+public class QuickStrategy extends SearchAlgorithm {
     public QuickStrategy() {
         this.type = "Quick";
     }
