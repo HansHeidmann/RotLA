@@ -106,12 +106,18 @@ public abstract class Adventurer {
                 //debug
                 //System.out.println(type + " did 1 damage to " + creature);
                 creature.damage++; // creature dies (all types have 1 health)
-                 // alert
+
+                support.firePropertyChange(this.toString()," defeats ",creature.toString()); // send alert to Logger
+
+                // Celebrate
+                this.combatStrategy.celebrate();
+                if (!Objects.equals(combatStrategy.decorator.getCelebrations(), null)) {
+                    support.firePropertyChange(this.toString()," ",combatStrategy.decorator.getCelebrations()); // send alert to Logger
+                }
+
                 if (creature.damage >= 1) {
-
-                    support.firePropertyChange(this.toString()," defeats ",creature.toString()); // send alert to Logger
+                    support.firePropertyChange(creature.toString()," has ","Died"); // send alert to Logger
                     creature.die();
-
                 }
             } else {
                 //debug
@@ -122,6 +128,7 @@ public abstract class Adventurer {
                 if (damage >= hitPoints) {
 
                     support.firePropertyChange(creature.toString(), " defeats ", this.toString()); // send alert to Logger
+                    support.firePropertyChange(this.toString()," has ","Died"); // send alert to Logger
                     die();
                 }
             }
@@ -149,6 +156,7 @@ public abstract class Adventurer {
                     //System.out.println("Trap 1 damage to " + type);
                     currentRoom.removeTreasure(treasure);
                     if(damage >= hitPoints) {
+                        support.firePropertyChange(this.toString()," has ","Died"); // send alert to Logger
                         die();
                     }
                     return;
@@ -177,9 +185,9 @@ public abstract class Adventurer {
 
     }
 
-    public void die() {
-        support.firePropertyChange(this.toString()," has ","Died"); // send alert to Logger
 
+
+    public void die() {
         alive = false;
     }
 

@@ -88,6 +88,14 @@ public abstract class Creature {
                 this.damage++; // creature dies (all types have 1 health)
 
                 support.firePropertyChange(adventurer.toString()," defeats ",this.toString()); // send alert to Logger
+
+                // adventurer celebrate
+                adventurer.combatStrategy.celebrate();
+                if (!Objects.equals(adventurer.combatStrategy.decorator.getCelebrations(), null)) {
+                    support.firePropertyChange(adventurer.toString(), " ", adventurer.combatStrategy.decorator.getCelebrations()); // send alert to Logger
+                }
+
+                support.firePropertyChange(this.toString()," has  ","Died"); // send alert to Logger
                 this.die();
 
             } else {
@@ -98,7 +106,9 @@ public abstract class Creature {
                 if (adventurer.damage >= adventurer.hitPoints) {
 
                     support.firePropertyChange(this.toString()," defeats ",adventurer.toString()); // send alert to Logger
+                    support.firePropertyChange(adventurer.toString()," has  ","Died"); // send alert to Logger
                     adventurer.die();
+
 
                 }
             }
@@ -107,7 +117,6 @@ public abstract class Creature {
 
     public void die() {
 
-        support.firePropertyChange(this.toString()," has  ","Died"); // send alert to Logger
         alive = false;
         
     }

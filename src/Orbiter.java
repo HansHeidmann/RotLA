@@ -32,7 +32,7 @@ public class Orbiter extends Creature {
 
             // move to room with target x,z
             gotoRoom(tx, tz);
-            support.firePropertyChange(this.toString()," Enters room ",currentRoom.id); // alert
+            support.firePropertyChange(this.toString()," enters room ",currentRoom.id); // alert
 
         }
 
