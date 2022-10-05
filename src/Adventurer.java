@@ -120,12 +120,12 @@ public abstract class Adventurer {
     private void searchForTreasure(int treasureRoll) {
 
         Treasure treasure;
-        if (treasureRoll >= 10) {
+        if (searchStrategy.rollDice() >= searchStrategy.searchMod && (searchStrategy.skipRoll != 1) )  {
 
             if (currentRoom.treasures.size() > 0) {
                 treasure = currentRoom.treasures.get(0);
                 // Damage the Adventurer if it's a Trap, and remove the Trap from the Room, then return
-                if (Objects.equals(treasure.type, "Trap")) {
+                if (Objects.equals(treasure.type, "Trap") && (searchStrategy.trapRoll != 1) ) {
                     damage++;
                     //debug
                     //System.out.println("Trap 1 damage to " + type);
