@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76528078-6a94-4564-a4dc-334738339c6b" name="Changes" comment="CombatAlgorithm working, need to fix glitch where last Orbiter doesn't die">
+    <list default="true" id="76528078-6a94-4564-a4dc-334738339c6b" name="Changes" comment="comments to find bug, no luck yet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Adventurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Adventurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoardRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExpertStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExpertStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Orbiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Orbiter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StealthStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StealthStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TrainedStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrainedStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UntrainedStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UntrainedStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +71,8 @@
       <workItem from="1663886637650" duration="3000" />
       <workItem from="1664042320554" duration="6258000" />
       <workItem from="1664638741565" duration="8281000" />
-      <workItem from="1664902163831" duration="12398000" />
+      <workItem from="1664902163831" duration="12434000" />
+      <workItem from="1664929880868" duration="1243000" />
     </task>
     <task id="LOCAL-00001" summary="getting started">
       <created>1663442302275</created>
@@ -102,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664911071022</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="comments to find bug, no luck yet">
+      <created>1664915593379</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664915593379</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +140,7 @@
     <MESSAGE value="Update README.md" />
     <MESSAGE value="Treasure objects added and collectable in inventories, and Trap treasures do 1 damage. &#10;SearchStrategy class and subclasses created but need to be written. CombatStrategy class and subclasses created but need to be written. Decorator and decorations classes created but need to be written." />
     <MESSAGE value="CombatAlgorithm working, need to fix glitch where last Orbiter doesn't die" />
-    <option name="LAST_COMMIT_MESSAGE" value="CombatAlgorithm working, need to fix glitch where last Orbiter doesn't die" />
+    <MESSAGE value="comments to find bug, no luck yet" />
+    <option name="LAST_COMMIT_MESSAGE" value="comments to find bug, no luck yet" />
   </component>
 </project>

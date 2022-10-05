@@ -24,7 +24,7 @@ public abstract class Creature {
         if (currentRoom.adventurers.size() > 0) { // if there is at least one adventurer
             for (Adventurer adventurer: currentRoom.adventurers) {
                 if (!currentRoom.renderer.gameOver && adventurer.alive) {
-                    //fight(adventurer, rollDice(), adventurer.rollDice());
+                    fight(adventurer);
                 }
             }
         }
@@ -44,9 +44,6 @@ public abstract class Creature {
         // System.out.println("A(n) " + type + " moved from: " + previousRoom.id + " to " + currentRoom.id);
     }
 
-    private void checkForEnemy(){
-        //
-    }
 
     public void fight(Adventurer adventurer) {
         if (!currentRoom.renderer.gameOver && adventurer.alive) {
@@ -55,11 +52,13 @@ public abstract class Creature {
                 return;
             }
             // DEBUG
+            /*
             System.out.println("***** BATTLE *****");
             System.out.println("Room ID: " + currentRoom.id);
             System.out.println("Room Creatures: " + currentRoom.creatures);
             System.out.println(type + " fighting " + adventurer);
             System.out.println(adventurer.type + " inventory: " + adventurer.inventory);
+             */
 
             int adventurerRollModifier = 0;
             int creatureRollModifier = 0;
@@ -74,16 +73,19 @@ public abstract class Creature {
                     creatureRollModifier--;
                 }
             }
+            /* debug
             System.out.println(adventurer.type + " roll mod: " + adventurerRollModifier);
             System.out.println(this.type + " roll mod: " + creatureRollModifier);
-
+             */
 
             if (adventurer.combatStrategy.rollDice(adventurerRollModifier) >= this.rollDice(creatureRollModifier)) {
-                System.out.println(adventurer.type + " did 1 damage to " + this);
+                //debug
+                //System.out.println(adventurer.type + " did 1 damage to " + this);
                 this.damage++; // creature dies (all types have 1 health)
                 this.die();
             } else {
-                System.out.println(this + " did 1 damage to " + adventurer.type);
+                //debug
+                //System.out.println(this + " did 1 damage to " + adventurer.type);
                 adventurer.damage++; // adventurer takes 1 damage
                 if (adventurer.damage >= adventurer.hitPoints) {
                     adventurer.die();

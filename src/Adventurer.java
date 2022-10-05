@@ -31,7 +31,8 @@ public abstract class Adventurer {
         if (currentRoom.creatures.size() > 0) { // if there is at least one creature:
 
             for (Creature creature: currentRoom.creatures) {
-                System.out.println(type + " FOUND A FUCKING CREATURE !!! ");
+                // debug
+                // System.out.println(type + " FOUND A FUCKING CREATURE !!! ");
                 if (!currentRoom.renderer.gameOver && creature.alive) {
                     fight(creature); //  POLYMORPHISM  allows fight to work with all the different subclasses of creature
                 }
@@ -60,16 +61,20 @@ public abstract class Adventurer {
         if (!currentRoom.renderer.gameOver && creature.alive) {
             // 50% chance Sneaker doesn't have to fight
             if (Objects.equals(combatStrategy.type, "Stealth") && (int) (Math.random() * 2) == 0) {
-                System.out.println(type + " didn't have to fight.");
-                return;
+                //debug
+                //System.out.println(type + " didn't have to fight.");
+                return; // do nothing and exit fight()
             }
 
             // DEBUG
+            /*
             System.out.println("***** BATTLE *****");
             System.out.println("Room ID: " + currentRoom.id);
             System.out.println("Room Creatures: " + currentRoom.creatures);
             System.out.println(type + " fighting " + creature);
             System.out.println(type + " inventory: " + inventory);
+            */
+
 
             int adventurerRollModifier = 0;
             int creatureRollModifier = 0;
@@ -84,18 +89,22 @@ public abstract class Adventurer {
                     creatureRollModifier--;
                 }
             }
+            //debug
+            /*
             System.out.println(type + " roll mod: " + adventurerRollModifier);
             System.out.println(creature.type + " roll mod: " + creatureRollModifier);
-
+            */
 
             if (this.combatStrategy.rollDice(adventurerRollModifier) >= creature.rollDice(creatureRollModifier)) {
-                System.out.println(type + " did 1 damage to " + creature);
+                //debug
+                //System.out.println(type + " did 1 damage to " + creature);
                 creature.damage++; // creature dies (all types have 1 health)
                 if (creature.damage >= 1) {
                     creature.die();
                 }
             } else {
-                System.out.println(creature + " did 1 damage to " + type);
+                //debug
+                //System.out.println(creature + " did 1 damage to " + type);
                 damage++; // adventurer takes 1 damage
                 if (damage >= hitPoints) {
                     die();
@@ -118,7 +127,8 @@ public abstract class Adventurer {
                 // Damage the Adventurer if it's a Trap, and remove the Trap from the Room, then return
                 if (Objects.equals(treasure.type, "Trap")) {
                     damage++;
-                    System.out.println("Trap 1 damage to " + type);
+                    //debug
+                    //System.out.println("Trap 1 damage to " + type);
                     currentRoom.removeTreasure(treasure);
                     if(damage >= hitPoints) {
                         die();

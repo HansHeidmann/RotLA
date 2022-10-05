@@ -37,7 +37,8 @@ public class BoardRenderer {
         for (Adventurer adventurer: adventurers) {
             if(adventurer.alive) {
                 adventurer.takeTurn();
-                System.out.println("adventurer: " + adventurer.type + " " + adventurer.alive + " " + adventurer.hitPoints + " " + adventurer.inventory);
+                //debug
+                //System.out.println("adventurer: " + adventurer.type + " " + adventurer.alive + " " + adventurer.hitPoints + " " + adventurer.inventory);
                 gameOver = false;
             } else {
                 deadAdventurers++;
@@ -48,7 +49,8 @@ public class BoardRenderer {
         for (Creature creature: creatures) {
             if(creature.alive) {
                 creature.takeTurn();
-                System.out.println("creature: " + creature.type + " " + creature.alive + " " + creature.damage);
+                //debug
+                //System.out.println("creature: " + creature.type + " " + creature.alive + " " + creature.damage);
                 gameOver = false;
             } else {
                 deadCreatures++;
