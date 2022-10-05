@@ -1,3 +1,5 @@
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -9,10 +11,12 @@ public abstract class Creature {
     Integer damage;
     Boolean alive;
     Room currentRoom;
+    private PropertyChangeSupport support;
 
     public Creature() {
         damage = 0;
         alive = true;
+        support = new PropertyChangeSupport(this);
     }
 
     public int rollDice(int treasureModifier) {
@@ -40,7 +44,7 @@ public abstract class Creature {
 
         currentRoom = adjacentRooms.get(randomAdjacentRoomIndex);
         currentRoom.addCreature(this);
-
+        support.firePropertyChange(this.toString()," Enters room ",currentRoom.id); // alert
         // System.out.println("A(n) " + type + " moved from: " + previousRoom.id + " to " + currentRoom.id);
     }
 
@@ -83,12 +87,15 @@ public abstract class Creature {
                 //System.out.println(adventurer.type + " did 1 damage to " + this);
                 this.damage++; // creature dies (all types have 1 health)
                 this.die();
+                support.firePropertyChange(adventurer.toString()," Defeats ",this.toString()); // alert
             } else {
                 //debug
                 //System.out.println(this + " did 1 damage to " + adventurer.type);
                 adventurer.damage++; // adventurer takes 1 damage
                 if (adventurer.damage >= adventurer.hitPoints) {
                     adventurer.die();
+                    support.firePropertyChange(this.toString()," Defeats ",adventurer.toString()); // alert
+
                 }
             }
         }
@@ -96,10 +103,20 @@ public abstract class Creature {
 
     public void die() {
         alive = false;
+        
     }
 
     public String toString(){
         return type;
+    }
+
+    public void addPCL(PropertyChangeListener pcl){
+        support.addPropertyChangeListener(pcl);
+    }
+
+    public void removePCL(PropertyChangeListener pcl){
+        support.removePropertyChangeListener(pcl);
+        
     }
 
 }

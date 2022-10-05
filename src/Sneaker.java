@@ -11,4 +11,8 @@ public class Sneaker extends Adventurer {
             super.fight(creature);
         }
     }
+
+    public String toString(){
+        return "Sneaker";
+    }
 }

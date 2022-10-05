@@ -44,5 +44,8 @@ public class Orbiter extends Creature {
         currentRoom.removeCreature(this);
         currentRoom = targetRoom;
     }
+    public String toString(){
+        return "Orbiter";
+    }
 
 }

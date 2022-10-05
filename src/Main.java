@@ -6,7 +6,7 @@ public class Main {
         while (!renderer.gameOver) {
 
             // main loop
-            renderer.displayGameState();
+           // renderer.displayGameState();
             renderer.takeTurn();
 
             // sleep - optional

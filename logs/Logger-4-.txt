@@ -1,0 +1,59 @@
+B Enters room 1-1-2
+S Enters room 1-1-0
+S Defeats B
+R Enters room 1-1-1
+R Enters room 1-1-0
+T Enters room 1-0-1
+B Enters room 1-1-2
+S Enters room 2-2-2
+R Enters room 1-0-0
+R Enters room 1-0-1
+R Defeats B
+T Enters room 4-1-1
+B Enters room 1-0-1
+B Finds Sword
+S Enters room 1-0-1
+R Enters room 2-2-1
+R Enters room 2-2-2
+T Enters room 1-0-1
+T Finds Portal
+B Enters room 1-2-1
+S Enters room 1-0-1
+T Enters room 1-1-0
+T Defeats B
+T Defeats B
+Brawler Enters room 1-1-2
+Sneaker Enters room 2-2-0
+Thief Enters room 1-0-1
+Thief Defeats Orbiter
+Thief Defeats Orbiter
+Brawler Enters room 1-1-2
+Sneaker Enters room 1-1-0
+Runner Enters room 1-2-0
+Runner Defeats Blinker
+Runner Enters room 1-1-0
+Thief Enters room 1-1-2
+Brawler Enters room 1-1-2
+Brawler Defeats Blinker
+Sneaker Enters room 1-1-2
+Runner Enters room 1-2-0
+Runner Enters room 1-2-1
+Runner Finds Sword
+Thief Enters room 2-1-1
+Brawler Defeats Orbiter
+Thief Defeats Blinker
+Brawler Enters room 1-0-1
+Runner Enters room 1-0-2
+Runner Took 1 damage
+Runner Enters room 1-0-1
+Thief Enters room 1-2-1
+Brawler Enters room 1-1-2
+Sneaker Enters room 2-2-2
+Runner Enters room 1-0-0
+Runner Enters room 1-1-0
+Runner Took 1 damage
+Thief Enters room 2-2-2
+Thief Finds Armor
+Sneaker Defeats Seeker
+Thief Defeats Seeker
+Brawler Defeats Blinker

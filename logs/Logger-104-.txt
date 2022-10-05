@@ -1,0 +1,13 @@
+B Enters room 3-1-0
+Brawler Enters room 1-1-0
+Runner Enters room 3-2-2
+Runner Enters room 3-1-2
+Thief Enters room 1-2-1
+Brawler Enters room 1-0-1
+Sneaker Enters room 2-0-0
+Runner Enters room 3-0-2
+Runner Finds Potion
+Runner Enters room 3-0-1
+Thief Enters room 3-2-1
+Thief Enters room 3-1-0
+Brawler Enters room 3-0-1

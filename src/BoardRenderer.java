@@ -12,6 +12,7 @@ public class BoardRenderer {
     Integer deadAdventurers;
     Integer deadCreatures;
     String endMessage;
+    Logger log = new Logger();
 
     public BoardRenderer() { // initialize game state -- ABSTRACTION used to hide the bulk of game initialization within a few short functions
         createRooms();
@@ -19,9 +20,9 @@ public class BoardRenderer {
         placeTreasures();
         spawnAdventurers();
         spawnCreatures();
-
         deadAdventurers = 0;
         deadCreatures = 0;
+        
     }
 
     public void takeTurn() {
@@ -36,19 +37,26 @@ public class BoardRenderer {
         // let all the adventurers take their turns
         for (Adventurer adventurer: adventurers) {
             if(adventurer.alive) {
+                adventurer.addPCL(log);
+                log.updateTurn(turnsTaken);
                 adventurer.takeTurn();
+                adventurer.removePCL(log);
                 //debug
                 //System.out.println("adventurer: " + adventurer.type + " " + adventurer.alive + " " + adventurer.hitPoints + " " + adventurer.inventory);
                 gameOver = false;
             } else {
                 deadAdventurers++;
             }
+            
         }
 
         // let all the creatures take their turns
         for (Creature creature: creatures) {
             if(creature.alive) {
+                creature.addPCL(log);
+                log.updateTurn(turnsTaken);
                 creature.takeTurn();
+                creature.removePCL(log);
                 //debug
                 //System.out.println("creature: " + creature.type + " " + creature.alive + " " + creature.damage);
                 gameOver = false;
@@ -203,6 +211,7 @@ public class BoardRenderer {
         brawler.type = "B";
         brawler.combatStrategy = new ExpertStrategy();
         brawler.searchStrategy = new CarelessStrategy();
+       // brawler.addPCL(log);
         adventurers.add(brawler);
 
         // Sneaker

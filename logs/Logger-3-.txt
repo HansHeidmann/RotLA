@@ -1,0 +1,55 @@
+B Enters room 1-2-2
+S Enters room 1-0-0
+R Enters room 1-2-2
+R Enters room 1-2-1
+T Enters room 1-0-0
+T Took Damage
+B Enters room 1-1-1
+S Enters room 2-2-1
+R Enters room 1-0-0
+R Enters room 1-0-1
+T Enters room 3-1-1
+B Enters room 1-1-1
+B Defeats B
+S Enters room 1-0-0
+R Enters room 2-2-1
+R Enters room 2-2-0
+T Enters room 1-1-1
+B Enters room 1-2-2
+S Enters room 1-0-2
+T Enters room 1-0-0
+Brawler Enters room 1-2-2
+Sneaker Enters room 2-1-0
+Runner Enters room 1-0-0
+Runner Enters room 1-0-1
+Runner Took 1 damage
+Orbiter defeats Runner
+Runner Has  Died
+Thief Enters room 1-0-0
+Thief Finds Potion
+Brawler Enters room 1-2-2
+Sneaker Enters room 1-2-0
+Runner Enters room 1-1-1
+Runner Enters room 1-2-1
+Thief Enters room 1-1-1
+Brawler Enters room 1-0-2
+Sneaker Enters room 1-2-2
+Runner Enters room 1-1-1
+Runner Enters room 1-1-0
+Thief Enters room 2-1-2
+Runner Defeats Orbiter
+Thief Defeats Seeker
+Thief Defeats Seeker
+Brawler Enters room 1-1-1
+Sneaker Enters room 1-2-2
+Sneaker Took Damage
+Sneaker Has  Died
+Runner Enters room 1-0-0
+Runner Enters room 1-0-1
+Thief Enters room 1-1-1
+Brawler Enters room 1-0-2
+Sneaker Enters room 2-1-2
+Runner Enters room 1-1-1
+Runner Enters room 1-0-1
+Thief Enters room 2-1-2
+Thief Finds Gem

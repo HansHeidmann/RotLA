@@ -16,5 +16,8 @@ public class Blinker extends Creature {
         targetRoom.addCreature(this);
         currentRoom = targetRoom;
     }
+    public String toString(){
+        return "Blinker";
+    }
 
 }

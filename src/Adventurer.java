@@ -1,7 +1,11 @@
 import javax.swing.*;
+
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Objects;
+
 
 ///
 /// Adventurer << ABSTRACT >>  --- compare with Creature class to see the code is very COHESIVE
@@ -18,12 +22,14 @@ public abstract class Adventurer {
 
     CombatAlgorithm combatStrategy;
     SearchAlgorithm searchStrategy;
+    private PropertyChangeSupport support;
 
     public Adventurer() {
         alive = true;
         damage = 0;
         hitPoints = 3;
         treasuresFound = 0;
+        support = new PropertyChangeSupport(this);
     }
 
     public void takeTurn() {
@@ -51,6 +57,7 @@ public abstract class Adventurer {
         previousRoom.removeAdventurer(this);
 
         currentRoom = adjacentRooms.get(randomAdjacentRoomIndex);
+        support.firePropertyChange(this.toString()," Enters room ",currentRoom.id); // alert
         currentRoom.addAdventurer(this);
 
         // DEBUG
@@ -99,14 +106,20 @@ public abstract class Adventurer {
                 //debug
                 //System.out.println(type + " did 1 damage to " + creature);
                 creature.damage++; // creature dies (all types have 1 health)
+                 // alert
                 if (creature.damage >= 1) {
+                    
                     creature.die();
+                    support.firePropertyChange(this.toString()," Defeats ",creature.toString());
                 }
             } else {
                 //debug
                 //System.out.println(creature + " did 1 damage to " + type);
                 damage++; // adventurer takes 1 damage
+                support.firePropertyChange(this.toString()," Took ","1 damage"); // alert
+
                 if (damage >= hitPoints) {
+                    support.firePropertyChange(creature.toString(), " defeats ", this.toString()); // alert
                     die();
                 }
             }
@@ -127,6 +140,8 @@ public abstract class Adventurer {
                 // Damage the Adventurer if it's a Trap, and remove the Trap from the Room, then return
                 if (Objects.equals(treasure.type, "Trap") && (searchStrategy.trapRoll != 1) ) {
                     damage++;
+                    support.firePropertyChange(this.toString()," Took ", "Damage"); // alert
+
                     //debug
                     //System.out.println("Trap 1 damage to " + type);
                     currentRoom.removeTreasure(treasure);
@@ -148,7 +163,9 @@ public abstract class Adventurer {
                 if (Objects.equals(treasure.type, "Potion")) {
                     hitPoints++;
                 }
+
                 inventory.add(treasure);
+                support.firePropertyChange(this.toString()," Finds ",treasure.type); // alert
                 currentRoom.removeTreasure(treasure);
                 treasuresFound++;
 
@@ -158,11 +175,23 @@ public abstract class Adventurer {
     }
 
     public void die() {
+        support.firePropertyChange(this.toString()," Has  ","Died"); // alert
+
         alive = false;
     }
 
     public String toString(){
         return type;
     }
+
+    public void addPCL(PropertyChangeListener pcl){
+        support.addPropertyChangeListener(pcl);
+    }
+
+    public void removePCL(PropertyChangeListener pcl){
+        support.removePropertyChangeListener(pcl);
+        
+    }
+
 
 }

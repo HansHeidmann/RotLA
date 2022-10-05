@@ -1,0 +1,46 @@
+B Enters room 1-0-2
+S Enters room 1-0-0
+R Enters room 1-2-0
+R Enters room 1-2-1
+T Enters room 1-0-0
+B Enters room 1-0-2
+S Enters room 2-1-2
+R Enters room 1-0-0
+R Enters room 1-1-0
+T Enters room 3-1-1
+T Finds Portal
+B Enters room 1-1-1
+S Enters room 1-1-1
+R Enters room 2-1-2
+R Enters room 2-0-2
+T Enters room 1-0-2
+T Defeats O
+T Defeats O
+B Enters room 1-2-2
+S Enters room 1-0-2
+T Enters room 1-0-0
+Brawler Enters room 1-0-2
+Sneaker Enters room 2-2-1
+Thief Enters room 1-0-0
+Thief Finds Sword
+Brawler Enters room 1-0-2
+Sneaker Enters room 1-0-0
+Runner Enters room 1-2-0
+Runner Enters room 1-1-0
+Thief Enters room 1-2-2
+Brawler Enters room 1-0-2
+Sneaker Enters room 1-0-2
+Runner Enters room 1-2-2
+Runner Enters room 1-2-1
+Thief Enters room 2-1-0
+Thief Finds Potion
+Thief Defeats Orbiter
+Brawler Enters room 1-0-0
+Runner Enters room 1-0-0
+Runner Enters room 1-1-0
+Thief Enters room 1-2-0
+Brawler Enters room 1-0-2
+Sneaker Enters room 2-1-2
+Runner Enters room 1-2-0
+Runner Enters room 1-2-1
+Thief Enters room 2-2-1

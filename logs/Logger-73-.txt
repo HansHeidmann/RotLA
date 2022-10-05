@@ -1,0 +1,20 @@
+S Enters room 4-1-0
+R Enters room 1-2-2
+R Enters room 1-1-2
+T Enters room 2-1-2
+B Enters room 4-0-1
+Brawler Enters room 1-1-1
+Sneaker Enters room 3-1-1
+Runner Enters room 3-1-1
+Runner Enters room 3-1-2
+Thief Enters room 1-2-2
+Brawler Enters room 1-2-2
+Sneaker Enters room 2-2-1
+Runner Enters room 1-1-1
+Runner Enters room 1-0-1
+Thief Enters room 3-0-2
+Brawler Enters room 3-1-1
+Brawler Took Damage
+Brawler Has  Died
+Thief Enters room 2-2-1
+Brawler Enters room 3-1-1

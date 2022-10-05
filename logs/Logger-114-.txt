@@ -1,0 +1,7 @@
+B Enters room 3-1-2
+Brawler Enters room 1-1-2
+Runner Enters room 3-2-2
+Runner Enters room 3-2-1
+Thief Enters room 1-1-0
+Thief Enters room 2-2-0
+Brawler Enters room 3-2-1

@@ -11,4 +11,7 @@ public class Runner extends Adventurer {
             super.takeTurn();
         }
     }
+    public String toString(){
+        return "Runner";
+    }
 }

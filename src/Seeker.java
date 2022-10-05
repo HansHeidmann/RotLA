@@ -18,4 +18,8 @@ public class Seeker extends Creature {
         }
     }
 
+    public String toString(){
+        return "Seeker";
+    }
+
 }

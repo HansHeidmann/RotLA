@@ -1,0 +1,14 @@
+B Enters room 4-2-0
+Brawler Enters room 1-1-2
+Sneaker Enters room 4-2-2
+Runner Enters room 3-2-0
+Runner Enters room 3-2-1
+Thief Enters room 1-1-2
+Brawler Enters room 1-1-2
+Sneaker Enters room 2-2-2
+Sneaker Finds Gem
+Runner Enters room 1-0-2
+Runner Enters room 1-0-1
+Thief Enters room 3-0-1
+Thief Enters room 2-0-2
+Brawler Enters room 3-0-1
