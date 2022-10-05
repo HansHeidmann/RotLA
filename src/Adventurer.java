@@ -57,7 +57,7 @@ public abstract class Adventurer {
         previousRoom.removeAdventurer(this);
 
         currentRoom = adjacentRooms.get(randomAdjacentRoomIndex);
-        support.firePropertyChange(this.toString()," Enters room ",currentRoom.id); // alert
+        support.firePropertyChange(this.toString()," enters room ",currentRoom.id); // send alert to Logger
         currentRoom.addAdventurer(this);
 
         // DEBUG
@@ -108,18 +108,20 @@ public abstract class Adventurer {
                 creature.damage++; // creature dies (all types have 1 health)
                  // alert
                 if (creature.damage >= 1) {
-                    
+
+                    support.firePropertyChange(this.toString()," defeats ",creature.toString()); // send alert to Logger
                     creature.die();
-                    support.firePropertyChange(this.toString()," Defeats ",creature.toString());
+
                 }
             } else {
                 //debug
                 //System.out.println(creature + " did 1 damage to " + type);
                 damage++; // adventurer takes 1 damage
-                support.firePropertyChange(this.toString()," Took ","1 damage"); // alert
+                support.firePropertyChange(this.toString()," took ","1 damage"); // send alert to Logger
 
                 if (damage >= hitPoints) {
-                    support.firePropertyChange(creature.toString(), " defeats ", this.toString()); // alert
+
+                    support.firePropertyChange(creature.toString(), " defeats ", this.toString()); // send alert to Logger
                     die();
                 }
             }
@@ -139,8 +141,9 @@ public abstract class Adventurer {
                 treasure = currentRoom.treasures.get(0);
                 // Damage the Adventurer if it's a Trap, and remove the Trap from the Room, then return
                 if (Objects.equals(treasure.type, "Trap") && (searchStrategy.trapRoll != 1) ) {
+                    support.firePropertyChange(this.toString()," found a ", "Trap"); // send alert to Logger
                     damage++;
-                    support.firePropertyChange(this.toString()," Took ", "Damage"); // alert
+                    support.firePropertyChange(this.toString()," took ", "1 Damage from a Trap"); // send alert to Logger
 
                     //debug
                     //System.out.println("Trap 1 damage to " + type);
@@ -165,7 +168,7 @@ public abstract class Adventurer {
                 }
 
                 inventory.add(treasure);
-                support.firePropertyChange(this.toString()," Finds ",treasure.type); // alert
+                support.firePropertyChange(this.toString()," found a ",treasure.type); // send alert to Logger
                 currentRoom.removeTreasure(treasure);
                 treasuresFound++;
 
@@ -175,7 +178,7 @@ public abstract class Adventurer {
     }
 
     public void die() {
-        support.firePropertyChange(this.toString()," Has  ","Died"); // alert
+        support.firePropertyChange(this.toString()," has ","Died"); // send alert to Logger
 
         alive = false;
     }

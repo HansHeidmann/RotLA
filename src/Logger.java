@@ -23,8 +23,6 @@ public class Logger implements PropertyChangeListener{
         update = event.getPropertyName() + (String)event.getOldValue() + (String)event.getNewValue() ;
             
 
-            
-            
             try{ // opens and writes to file
                 FileWriter fileWriter = new FileWriter("./logs/Logger-"+ turn +"-.txt",true);
                 PrintWriter printWriter = new PrintWriter(fileWriter);
@@ -34,9 +32,6 @@ public class Logger implements PropertyChangeListener{
             catch (IOException ioe){
                 System.out.println("can't write file  " + ioe.getMessage());
             }
-            
-            
-        
 
             System.out.println(event.getPropertyName() + (String)event.getOldValue() + (String)event.getNewValue() ) ;
     }

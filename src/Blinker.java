@@ -7,6 +7,7 @@ public class Blinker extends Creature {
     }
     public void move() {
         gotoRoom(1 + (int) (Math.random() * 4), (int) (Math.random() * 3), (int) (Math.random() * 3));
+        support.firePropertyChange(this.toString()," Enters room ",currentRoom.id); // alert
     }
 
     // ENCAPSULATION - this private function is encapsulated here and can not be called somewhere else

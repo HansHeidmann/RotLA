@@ -12,10 +12,12 @@ public class Seeker extends Creature {
                     currentRoom.removeCreature(this);
                     room.addCreature(this);
                     currentRoom = room;
+                    support.firePropertyChange(this.toString()," Enters room ",currentRoom.id); // alert
                     return;
                 }
             }
         }
+        support.firePropertyChange(this.toString()," Stays in room ",currentRoom.id); // alert
     }
 
     public String toString(){

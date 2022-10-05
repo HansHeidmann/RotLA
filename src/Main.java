@@ -20,10 +20,5 @@ public class Main {
         renderer.displayGameState(); // display 1 last time when game has ended
         System.out.println(renderer.endMessage);
 
-        System.out.println("// Inventories of the Adventurers");
-        for (Adventurer adventurer: renderer.adventurers) {
-            System.out.println(adventurer + ": " + adventurer.inventory);
-        }
-
     }
 }

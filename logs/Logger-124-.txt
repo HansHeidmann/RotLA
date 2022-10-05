@@ -1,9 +1,0 @@
-Brawler Enters room 1-2-1
-Runner Enters room 2-0-1
-Runner Took Damage
-Runner Has  Died
-Runner Enters room 2-1-1
-Thief Enters room 1-2-1
-Thief Enters room 4-1-1
-Brawler Enters room 1-1-0
-Brawler Finds Armor

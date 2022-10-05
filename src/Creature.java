@@ -11,7 +11,7 @@ public abstract class Creature {
     Integer damage;
     Boolean alive;
     Room currentRoom;
-    private PropertyChangeSupport support;
+    public PropertyChangeSupport support;
 
     public Creature() {
         damage = 0;
@@ -44,8 +44,8 @@ public abstract class Creature {
 
         currentRoom = adjacentRooms.get(randomAdjacentRoomIndex);
         currentRoom.addCreature(this);
-        support.firePropertyChange(this.toString()," Enters room ",currentRoom.id); // alert
-        // System.out.println("A(n) " + type + " moved from: " + previousRoom.id + " to " + currentRoom.id);
+
+        support.firePropertyChange(this.toString()," enters room ",currentRoom.id); // send alert to Logger
     }
 
 
@@ -86,15 +86,19 @@ public abstract class Creature {
                 //debug
                 //System.out.println(adventurer.type + " did 1 damage to " + this);
                 this.damage++; // creature dies (all types have 1 health)
+
+                support.firePropertyChange(adventurer.toString()," defeats ",this.toString()); // send alert to Logger
                 this.die();
-                support.firePropertyChange(adventurer.toString()," Defeats ",this.toString()); // alert
+
             } else {
                 //debug
                 //System.out.println(this + " did 1 damage to " + adventurer.type);
                 adventurer.damage++; // adventurer takes 1 damage
+
                 if (adventurer.damage >= adventurer.hitPoints) {
+
+                    support.firePropertyChange(this.toString()," defeats ",adventurer.toString()); // send alert to Logger
                     adventurer.die();
-                    support.firePropertyChange(this.toString()," Defeats ",adventurer.toString()); // alert
 
                 }
             }
@@ -102,6 +106,8 @@ public abstract class Creature {
     }
 
     public void die() {
+
+        support.firePropertyChange(this.toString()," has  ","Died"); // send alert to Logger
         alive = false;
         
     }

@@ -37,13 +37,10 @@ public class BoardRenderer {
         // let all the adventurers take their turns
         for (Adventurer adventurer: adventurers) {
             if(adventurer.alive) {
-                adventurer.addPCL(log);
-                log.updateTurn(turnsTaken);
-                adventurer.takeTurn();
-                adventurer.removePCL(log);
-                //debug
-                //System.out.println("adventurer: " + adventurer.type + " " + adventurer.alive + " " + adventurer.hitPoints + " " + adventurer.inventory);
-                gameOver = false;
+                adventurer.addPCL(log); // Instantiate a Logger
+                adventurer.takeTurn(); // Call Adventurer's public takeTurn() method
+                adventurer.removePCL(log); // Remove the Logger
+                gameOver = false; // The game is not over if there is still an Adventurer alive
             } else {
                 deadAdventurers++;
             }
@@ -53,13 +50,11 @@ public class BoardRenderer {
         // let all the creatures take their turns
         for (Creature creature: creatures) {
             if(creature.alive) {
-                creature.addPCL(log);
-                log.updateTurn(turnsTaken);
-                creature.takeTurn();
+                creature.addPCL(log);  // Instantiate a Logger
+                log.updateTurn(turnsTaken);  // Call Adventurer's public takeTurn() method
+                creature.takeTurn();  // Remove the Logger
                 creature.removePCL(log);
-                //debug
-                //System.out.println("creature: " + creature.type + " " + creature.alive + " " + creature.damage);
-                gameOver = false;
+                gameOver = false; // The game is not over if there is still an Adventurer alive
             } else {
                 deadCreatures++;
             }
@@ -91,6 +86,7 @@ public class BoardRenderer {
                 }
             }
         }
+
 
         System.out.println("--------------------------------------------");
     }
