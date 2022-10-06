@@ -1,0 +1,4 @@
+Sneaker enters room 3-2-1
+Thief enters room 1-1-0
+Thief found a Trap
+Thief took 1 Damage from a Trap

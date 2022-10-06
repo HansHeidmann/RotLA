@@ -1,9 +1,0 @@
-Seeker enters room 3-0-1
-Sneaker defeats Seeker
-Sneaker Jumped
-Seeker has  Died
-Brawler enters room 1-2-2
-Sneaker enters room 3-0-0
-Runner enters room 3-1-1
-Runner enters room 3-1-0
-Thief enters room 1-0-0

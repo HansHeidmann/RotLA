@@ -1,2 +1,6 @@
-Orbiter enters room 2-0-1
-Brawler enters room 2-2-0
+Orbiter enters room 3-1-2
+Sneaker enters room 4-0-0
+Thief enters room 3-1-2
+Thief defeats Orbiter
+Thief Jumped
+Orbiter has Died
