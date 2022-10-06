@@ -1,6 +1,0 @@
-Orbiter enters room 4-2-0
-Seeker enters room 4-0-1
-Brawler defeats Seeker
-Brawler Jumped
-Seeker has  Died
-Brawler enters room 4-1-1

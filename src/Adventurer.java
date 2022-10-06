@@ -191,8 +191,16 @@ public abstract class Adventurer {
         alive = false;
     }
 
-    public String toString(){
-        return type;
+    public String displayInventory(){
+        String str = "";
+        for (Treasure item : inventory){
+            
+             str = str  +item.type+",";
+        }
+
+       
+
+        return str;
     }
 
     // for Logger  (observer pattern)

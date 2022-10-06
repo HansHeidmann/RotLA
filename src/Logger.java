@@ -36,7 +36,7 @@ public class Logger implements PropertyChangeListener{
                 System.out.println("can't write file  " + ioe.getMessage());
             }
 
-            System.out.println(event.getPropertyName() + (String)event.getOldValue() + (String)event.getNewValue() ) ;
+           // System.out.println(event.getPropertyName() + (String)event.getOldValue() + (String)event.getNewValue() ) ;
     }
         //Files.writeLines(path, update.getBytes());
 
