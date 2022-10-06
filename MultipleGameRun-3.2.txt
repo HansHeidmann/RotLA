@@ -1,1 +1,35 @@
+1 All creatures have been eliminated.
+2 All adventurers have been eliminated.
+3 All adventurers have been eliminated.
+4 All adventurers have been eliminated.
+5 All adventurers have been eliminated.
+6 All adventurers have been eliminated.
+7 All creatures have been eliminated.
+8 All creatures have been eliminated.
+9 All creatures have been eliminated.
+10 All adventurers have been eliminated.
+11 All creatures have been eliminated.
+12 All creatures have been eliminated.
+13 All adventurers have been eliminated.
+14 All adventurers have been eliminated.
+15 All creatures have been eliminated.
+16 All adventurers have been eliminated.
+17 All adventurers have been eliminated.
+18 All creatures have been eliminated.
+19 All creatures have been eliminated.
+20 All creatures have been eliminated.
+21 All creatures have been eliminated.
+22 All adventurers have been eliminated.
+23 All creatures have been eliminated.
+24 All adventurers have been eliminated.
+25 All creatures have been eliminated.
+26 All creatures have been eliminated.
+27 All creatures have been eliminated.
+28 All adventurers have been eliminated.
+29 All creatures have been eliminated.
+30 All adventurers have been eliminated.
 
+Summary
+14 Time(s) - All adventurers have been eliminated.
+16 Time(s) - All creatures have been eliminated.
+0 Time(s) - All treasure has been found
