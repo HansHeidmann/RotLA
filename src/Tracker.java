@@ -6,8 +6,7 @@ import java.util.ArrayList;
 public class Tracker implements PropertyChangeListener {
 
 
-    public void propertyChange(PropertyChangeEvent event){
-        //ArrayList<Adventurer> adventurers = (ArrayList<adventurer>)event.getNewValue();
+    public void propertyChange(PropertyChangeEvent event){ // prints Tracking message 
         System.out.println("Tracker: turn " + event.getPropertyName());
         System.out.print("Total Active Adventurers: ");
         System.out.println(event.getNewValue());

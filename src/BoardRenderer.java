@@ -106,7 +106,7 @@ public class BoardRenderer {
 
         System.out.println("--------------------------------------------");
 
-        support.firePropertyChange(String.valueOf(turnsTaken) ,adPrint, String.valueOf((4 -deadAdventurers)));
+        support.firePropertyChange(String.valueOf(turnsTaken) ,adPrint, String.valueOf((4 -deadAdventurers))); // sends update to Tracker 
     }
 
     public void displayGameState() {
