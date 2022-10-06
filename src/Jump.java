@@ -2,7 +2,7 @@ import java.util.Objects;
 
 public class Jump extends CelebrateDecorator {
     //
-    // JUMP DECORATION
+    // JUMP (decorator pattern)
     //
     CelebrateDecorator decorator;
     public Jump(CelebrateDecorator decorator) {

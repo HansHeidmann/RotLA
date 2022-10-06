@@ -2,7 +2,7 @@ import java.util.Objects;
 
 public class Shout extends CelebrateDecorator {
     //
-    // SHOUT DECORATION
+    // SHOUT (decorator pattern)
     //
     CelebrateDecorator decorator;
     public Shout(CelebrateDecorator decorator) {

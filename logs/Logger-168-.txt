@@ -1,0 +1,22 @@
+Orbiter enters room 4-1-2
+Seeker stays in room 4-1-0
+Seeker stays in room 4-1-2
+Brawler enters room 2-2-1
+Seeker stays in room 4-1-1
+Orbiter enters room 4-2-0
+Seeker stays in room 4-1-1
+Orbiter enters room 4-0-1
+Sneaker enters room 3-2-2
+Orbiter enters room 4-0-1
+Orbiter enters room 3-1-0
+Brawler enters room 1-2-2
+Thief enters room 1-0-0
+Seeker stays in room 3-2-2
+Seeker stays in room 4-0-2
+Brawler enters room 1-1-1
+Seeker stays in room 4-2-1
+Sneaker enters room 2-0-1
+Thief enters room 3-2-0
+Seeker stays in room 4-0-0
+Brawler enters room 2-2-1
+Thief enters room 2-2-1

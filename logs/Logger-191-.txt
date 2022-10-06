@@ -1,0 +1,22 @@
+Orbiter enters room 4-2-2
+Seeker stays in room 4-1-0
+Seeker stays in room 4-1-2
+Brawler enters room 2-2-2
+Seeker stays in room 4-1-1
+Orbiter enters room 4-1-0
+Seeker stays in room 4-1-1
+Orbiter enters room 4-0-0
+Sneaker enters room 3-2-1
+Orbiter enters room 4-0-0
+Orbiter enters room 3-2-0
+Brawler enters room 2-1-1
+Thief enters room 1-1-2
+Seeker stays in room 3-2-2
+Seeker stays in room 4-0-2
+Brawler enters room 3-1-0
+Brawler defeats Orbiter
+Brawler Spun, and Shouted
+Orbiter has Died
+Seeker stays in room 4-0-0
+Brawler enters room 2-2-0
+Thief enters room 2-0-2

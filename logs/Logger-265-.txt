@@ -1,0 +1,4 @@
+Orbiter enters room 4-0-2
+Seeker stays in room 4-1-0
+Seeker stays in room 4-1-2
+Brawler enters room 2-0-0

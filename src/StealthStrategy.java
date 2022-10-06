@@ -1,4 +1,5 @@
 public class StealthStrategy extends CombatAlgorithm {
+    // strategy subclass
     public StealthStrategy() {
         this.type = "Stealth";
     }

@@ -1,4 +1,5 @@
 public class SearchAlgorithm {
+    // strategy pattern
     String type;
     int trapRoll;
     int skipRoll;

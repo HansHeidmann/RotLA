@@ -1,0 +1,10 @@
+Orbiter enters room 4-0-0
+Seeker stays in room 4-1-0
+Seeker stays in room 4-1-2
+Brawler enters room 2-2-0
+Seeker enters room 4-1-0
+Thief defeats Seeker
+Thief Spun
+Seeker has  Died
+Brawler enters room 2-1-1
+Thief enters room 4-2-0
