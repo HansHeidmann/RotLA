@@ -18,6 +18,7 @@ public class Main {
             }
 
         }
+        renderer.removePCL(tracker);
         renderer.displayGameState(); // display 1 last time when game has ended
         System.out.println(renderer.endMessage);
 
