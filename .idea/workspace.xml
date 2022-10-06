@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76528078-6a94-4564-a4dc-334738339c6b" name="Changes" comment="Comments for Patterns Added [for grader(s)]">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BoardRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="76528078-6a94-4564-a4dc-334738339c6b" name="Changes" comment="All done! Prints board with Tracker each turn and matches up with Logger log files" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +65,7 @@
       <workItem from="1664929880868" duration="1243000" />
       <workItem from="1664934738251" duration="820000" />
       <workItem from="1664981354759" duration="10967000" />
-      <workItem from="1665013455926" duration="8776000" />
+      <workItem from="1665013455926" duration="9076000" />
     </task>
     <task id="LOCAL-00001" summary="getting started">
       <created>1663442302275</created>
@@ -135,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665018312805</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="All done! Prints board with Tracker each turn and matches up with Logger log files">
+      <created>1665035403139</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665035403139</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +165,7 @@
     <MESSAGE value="added event publishing to creature subclasses, started to do some more comments, some code cleanup, etc" />
     <MESSAGE value="Decorator done" />
     <MESSAGE value="Comments for Patterns Added [for grader(s)]" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comments for Patterns Added [for grader(s)]" />
+    <MESSAGE value="All done! Prints board with Tracker each turn and matches up with Logger log files" />
+    <option name="LAST_COMMIT_MESSAGE" value="All done! Prints board with Tracker each turn and matches up with Logger log files" />
   </component>
 </project>

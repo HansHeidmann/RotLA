@@ -1,0 +1,7 @@
+Seeker stays in room 3-0-0
+Brawler enters room 1-0-2
+Sneaker enters room 2-2-1
+Sneaker found a Armor
+Runner enters room 4-0-1
+Runner enters room 4-0-2
+Thief enters room 1-0-0
