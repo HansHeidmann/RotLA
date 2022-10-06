@@ -4,11 +4,16 @@ public class Main {
         BoardRenderer renderer = new BoardRenderer();
         Tracker tracker = new Tracker();
         renderer.addPCL(tracker);
+
         while (!renderer.gameOver) {
 
             // main loop
-           // renderer.displayGameState();
+
+            renderer.displayGameState();
             renderer.takeTurn();
+
+
+            System.out.println("--------------------------------------------");
 
             // sleep - optional
             try {
@@ -19,7 +24,7 @@ public class Main {
 
         }
         renderer.removePCL(tracker);
-        renderer.displayGameState(); // display 1 last time when game has ended
+
         System.out.println(renderer.endMessage);
 
     }

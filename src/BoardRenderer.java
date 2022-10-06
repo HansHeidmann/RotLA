@@ -7,7 +7,7 @@ import java.util.Objects;
 public class BoardRenderer {
 
     Boolean gameOver = false;
-    Integer turnsTaken = 0;
+    Integer turnsTaken = 1;
     ArrayList<Room> rooms = new ArrayList<>();
     ArrayList<Adventurer> adventurers = new ArrayList<>();
     ArrayList<Creature> creatures = new ArrayList<>();
@@ -31,7 +31,7 @@ public class BoardRenderer {
 
     public void takeTurn() {
 
-        turnsTaken++;
+
 
         // reset counters
 
@@ -103,10 +103,10 @@ public class BoardRenderer {
             }
         }
 
+        support.firePropertyChange(String.valueOf(turnsTaken) ,adPrint, String.valueOf((4 -deadAdventurers))); // sends update to Tracker
 
-        System.out.println("--------------------------------------------");
+        turnsTaken++;
 
-        support.firePropertyChange(String.valueOf(turnsTaken) ,adPrint, String.valueOf((4 -deadAdventurers))); // sends update to Tracker 
     }
 
     public void displayGameState() {
@@ -139,6 +139,9 @@ public class BoardRenderer {
 
         }
 
+        /*
+        OLD TRACKER FOR PROJECT 2.2
+
         // list adventurers stats
         for(Adventurer adventurer: adventurers) {
             System.out.println(adventurer.type + " - " + adventurer.treasuresFound + " Treasures(s) - " + adventurer.damage + " Damage");
@@ -148,6 +151,7 @@ public class BoardRenderer {
         for(Creature creature: creatures) {
             //System.out.println(creature.type + " - " + creature.treasuresFound + " Treasures(s) - " + creature.damage + " Damage");
         }
+        */
 
     }
 
@@ -227,6 +231,7 @@ public class BoardRenderer {
         brawler.searchStrategy = new CarelessStrategy();
        // brawler.addPCL(log);
         adventurers.add(brawler);
+        brawler.currentRoom.addAdventurer(brawler);
 
         // Sneaker
         Adventurer sneaker = new Sneaker();
@@ -235,6 +240,7 @@ public class BoardRenderer {
         sneaker.combatStrategy = new StealthStrategy();
         sneaker.searchStrategy = new QuickStrategy();
         adventurers.add(sneaker);
+        sneaker.currentRoom.addAdventurer(sneaker);
 
 //        CombatAlgorithm combatAlgorithm = new StealthStrategy();
 //        brawler.combatStrategy = combatAlgorithm;
@@ -248,6 +254,8 @@ public class BoardRenderer {
         runner.combatStrategy = new UntrainedStrategy();
         runner.searchStrategy = new QuickStrategy();
         adventurers.add(runner);
+        runner.currentRoom.addAdventurer(runner);
+
 
         // Thief
         Adventurer thief = new Thief();
@@ -256,6 +264,7 @@ public class BoardRenderer {
         thief.combatStrategy = new TrainedStrategy();
         thief.searchStrategy = new CarefulStrategy();
         adventurers.add(thief);
+        thief.currentRoom.addAdventurer(thief);
     }
 
     private void spawnCreatures() {
@@ -283,6 +292,7 @@ public class BoardRenderer {
         tempOrbiter.currentRoom = getRoomByID(roomID);
         tempOrbiter.type = "O";
         creatures.add(tempOrbiter);
+        tempOrbiter.currentRoom.addCreature(tempOrbiter);
     }
 
     private void spawnSeeker() {
@@ -296,6 +306,7 @@ public class BoardRenderer {
         tempSeeker.currentRoom = getRoomByID(roomID);
         tempSeeker.type = "S";
         creatures.add(tempSeeker);
+        tempSeeker.currentRoom.addCreature(tempSeeker);
     }
     private void spawnBlinker() {
         // Blinker - always start on level 4 in random room, move randomly to any room in all 4 levels each turn, will not move if in room with adventurer
@@ -308,6 +319,7 @@ public class BoardRenderer {
         tempBlinker.currentRoom = getRoomByID(roomID);
         tempBlinker.type = "B";
         creatures.add(tempBlinker);
+        tempBlinker.currentRoom.addCreature(tempBlinker);
     }
 
     public void addPCL(PropertyChangeListener pcl){
