@@ -375,3 +375,8 @@ Runner found a Trap
 Runner took 1 Damage from a Trap
 Runner enters room 1-2-1
 Thief enters room 1-1-1
+Brawler enters room 1-1-1
+Sneaker enters room 1-1-1
+Runner enters room 1-1-1
+Runner enters room 1-0-1
+Thief enters room 1-1-1

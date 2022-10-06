@@ -113,3 +113,9 @@ Orbiter enters room 4-1-2
 Seeker stays in room 4-0-1
 Orbiter enters room 3-1-2
 Thief enters room 1-1-1
+Orbiter enters room 3-0-1
+Sneaker defeats Orbiter
+Orbiter has  Died
+Sneaker enters room 3-1-1
+Runner enters room 3-1-1
+Runner enters room 3-1-2

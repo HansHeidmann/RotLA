@@ -161,3 +161,11 @@ Seeker stays in room 4-0-1
 Orbiter enters room 3-0-0
 Thief enters room 2-2-2
 Thief found a Armor
+Orbiter enters room 3-2-0
+Brawler enters room 2-2-0
+Brawler found a Trap
+Brawler took 1 Damage from a Trap
+Brawler has Died
+Sneaker enters room 2-2-2
+Runner enters room 2-2-1
+Runner enters room 2-2-0

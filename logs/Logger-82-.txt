@@ -142,3 +142,7 @@ Orbiter enters room 4-1-2
 Seeker stays in room 4-0-1
 Orbiter enters room 3-1-2
 Thief enters room 2-2-1
+Orbiter enters room 3-0-1
+Sneaker enters room 2-0-1
+Runner enters room 2-1-2
+Runner enters room 2-0-2

@@ -240,3 +240,8 @@ Orbiter enters room 3-0-0
 Seeker stays in room 2-1-1
 Sneaker enters room 2-0-0
 Thief enters room 1-0-1
+Orbiter enters room 3-2-0
+Brawler enters room 2-0-0
+Sneaker enters room 1-0-1
+Runner enters room 4-1-2
+Runner enters room 4-0-2
