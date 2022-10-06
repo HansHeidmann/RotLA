@@ -2,7 +2,7 @@ import java.util.Objects;
 
 public class Spin extends CelebrateDecorator {
     //
-    // SPIN DECORATION
+    // SPIN (decorator pattern)
     //
     CelebrateDecorator decorator;
     public Spin(CelebrateDecorator decorator) {

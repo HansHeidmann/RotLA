@@ -1,7 +1,0 @@
-Sneaker enters room 3-1-2
-Thief enters room 4-0-2
-Thief defeats Orbiter
-Thief Jumped
-Orbiter has Died
-Seeker stays in room 3-1-0
-Sneaker enters room 4-1-1

@@ -1,4 +1,5 @@
 public class CombatAlgorithm {
+    // strategy pattern
     String type;
     CelebrateDecorator decorator;
     public CombatAlgorithm() {

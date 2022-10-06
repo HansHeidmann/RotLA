@@ -8,8 +8,8 @@ import java.util.Objects;
 ///
 public abstract class Creature {
     String type;
-    Integer damage;
     Boolean alive;
+    Integer damage;
     Room currentRoom;
     public PropertyChangeSupport support;
 
@@ -45,7 +45,7 @@ public abstract class Creature {
         currentRoom = adjacentRooms.get(randomAdjacentRoomIndex);
         currentRoom.addCreature(this);
 
-        support.firePropertyChange(this.toString()," enters room ",currentRoom.id); // send alert to Logger
+        support.firePropertyChange(this.toString()," enters room ",currentRoom.id); // send alert to Logger (observer pattern)
     }
 
 
@@ -87,15 +87,15 @@ public abstract class Creature {
                 //System.out.println(adventurer.type + " did 1 damage to " + this);
                 this.damage++; // creature dies (all types have 1 health)
 
-                support.firePropertyChange(adventurer.toString()," defeats ",this.toString()); // send alert to Logger
+                support.firePropertyChange(adventurer.toString()," defeats ",this.toString()); // send alert to Logger (observer pattern)
 
                 // adventurer celebrate
                 adventurer.combatStrategy.celebrate();
                 if (!Objects.equals(adventurer.combatStrategy.decorator.getCelebrations(), null)) {
-                    support.firePropertyChange(adventurer.toString(), " ", adventurer.combatStrategy.decorator.getCelebrations()); // send alert to Logger
+                    support.firePropertyChange(adventurer.toString(), " ", adventurer.combatStrategy.decorator.getCelebrations()); // send alert to Logger (observer pattern)
                 }
 
-                support.firePropertyChange(this.toString()," has  ","Died"); // send alert to Logger
+                support.firePropertyChange(this.toString()," has  ","Died"); // send alert to Logger (observer pattern)
                 this.die();
 
             } else {
@@ -105,8 +105,8 @@ public abstract class Creature {
 
                 if (adventurer.damage >= adventurer.hitPoints) {
 
-                    support.firePropertyChange(this.toString()," defeats ",adventurer.toString()); // send alert to Logger
-                    support.firePropertyChange(adventurer.toString()," has  ","Died"); // send alert to Logger
+                    support.firePropertyChange(this.toString()," defeats ",adventurer.toString()); // send alert to Logger (observer pattern)
+                    support.firePropertyChange(adventurer.toString()," has  ","Died"); // send alert to Logger (observer pattern)
                     adventurer.die();
 
 
@@ -125,10 +125,11 @@ public abstract class Creature {
         return type;
     }
 
-    public void addPCL(PropertyChangeListener pcl){
+    // for Logger  (observer pattern)
+    public void addPCL(PropertyChangeListener pcl) {
         support.addPropertyChangeListener(pcl);
     }
-
+    // for Logger  (observer pattern)
     public void removePCL(PropertyChangeListener pcl){
         support.removePropertyChangeListener(pcl);
         

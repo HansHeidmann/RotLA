@@ -2,7 +2,7 @@ import java.util.Objects;
 
 public class Dance extends CelebrateDecorator {
     //
-    // DANCE DECORATION
+    // DANCE (decorator pattern)
     //
     CelebrateDecorator decorator;
     public Dance(CelebrateDecorator decorator) {

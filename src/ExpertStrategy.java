@@ -1,4 +1,5 @@
 public class ExpertStrategy extends CombatAlgorithm {
+    // strategy subclass
     public ExpertStrategy() {
         this.type = "Expert";
     }

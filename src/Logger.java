@@ -11,6 +11,9 @@ import java.nio.file.StandardOpenOption;
 import javax.print.event.PrintEvent;
 // reference https://www.baeldung.com/java-observer-pattern
 public class Logger implements PropertyChangeListener{
+    //
+    // observer pattern
+    //
     private String update;
     private int turn;
     
