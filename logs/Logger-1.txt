@@ -1,0 +1,21 @@
+Orbiter enters room 2-2-0
+Seeker stays in room 3-0-2
+Blinker enters room 1-0-2
+Orbiter enters room 2-1-0
+Seeker stays in room 3-1-2
+Blinker enters room 4-1-1
+Orbiter enters room 3-1-0
+Seeker stays in room 3-0-1
+Blinker enters room 1-0-1
+Orbiter enters room 1-2-0
+Seeker stays in room 2-0-0
+Blinker enters room 3-0-1
+Brawler enters room 1-0-1
+Brawler defeats Blinker
+Brawler Spun
+Blinker has Died
+Sneaker enters room 2-1-1
+Runner enters room 1-0-2
+Runner took 1 damage
+Runner enters room 1-1-2
+Thief enters room 1-2-1

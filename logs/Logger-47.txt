@@ -1,0 +1,10 @@
+Orbiter enters room 2-1-2
+Seeker stays in room 2-1-1
+Seeker stays in room 2-1-1
+Brawler enters room 2-1-1
+Brawler defeats Seeker
+Brawler Danced
+Seeker has Died
+Brawler defeats Seeker
+Brawler Jumped
+Seeker has Died

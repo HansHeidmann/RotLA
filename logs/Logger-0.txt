@@ -1,0 +1,6 @@
+Brawler enters room 1-1-1
+Sneaker enters room 1-1-1
+Runner enters room 1-1-1
+Runner enters room 1-1-2
+Runner found a Armor
+Thief enters room 1-1-1

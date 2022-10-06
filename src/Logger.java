@@ -27,7 +27,7 @@ public class Logger implements PropertyChangeListener{
             
 
             try{ // opens and writes log  to file  
-                FileWriter fileWriter = new FileWriter("./logs/Logger-"+ turn +"-.txt",true);
+                FileWriter fileWriter = new FileWriter("./logs/Logger-"+ turn +".txt",true);
                 PrintWriter printWriter = new PrintWriter(fileWriter);
                 printWriter.println(update);
                 printWriter.close();
