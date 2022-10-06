@@ -1,0 +1,5 @@
+Seeker stays in room 3-1-0
+Sneaker enters room 3-1-0
+Sneaker defeats Seeker
+Sneaker Shouted, and Danced
+Seeker has Died

@@ -2,7 +2,8 @@ public class Main {
     public static void main(String[] args) {
 
         BoardRenderer renderer = new BoardRenderer();
-
+        Tracker tracker = new Tracker();
+        renderer.addPCL(tracker);
         while (!renderer.gameOver) {
 
             // main loop

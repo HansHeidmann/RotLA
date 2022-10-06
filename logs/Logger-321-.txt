@@ -1,0 +1,10 @@
+Sneaker enters room 3-0-1
+Thief enters room 3-1-0
+Seeker stays in room 3-1-0
+Sneaker enters room 4-2-2
+Orbiter enters room 4-2-2
+Sneaker enters room 2-0-0
+Seeker stays in room 4-0-2
+Runner enters room 1-0-2
+Runner enters room 1-0-1
+Thief enters room 3-0-1

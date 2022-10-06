@@ -1,3 +1,5 @@
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Objects;
@@ -13,6 +15,7 @@ public class BoardRenderer {
     Integer deadCreatures;
     String endMessage;
     Logger log = new Logger();
+    private PropertyChangeSupport support;
 
     public BoardRenderer() { // initialize game state -- ABSTRACTION used to hide the bulk of game initialization within a few short functions
         createRooms();
@@ -22,6 +25,7 @@ public class BoardRenderer {
         spawnCreatures();
         deadAdventurers = 0;
         deadCreatures = 0;
+        support = new PropertyChangeSupport(this);
         
     }
 
@@ -33,9 +37,13 @@ public class BoardRenderer {
 
         deadAdventurers = 0;
         deadCreatures = 0;
-
+        StringBuilder adPrint = new StringBuilder();
         // let all the adventurers take their turns
         for (Adventurer adventurer: adventurers) {
+            adPrint.append(adventurer.toString() +"            " +adventurer.currentRoom.id + "     " + adventurer.damage + "        " + adventurer.displayInventory() +"\n"          );
+            
+          
+
             if(adventurer.alive) {
                 adventurer.addPCL(log); // Instantiate a Logger
                 adventurer.takeTurn(); // Call Adventurer's public takeTurn() method
@@ -46,16 +54,24 @@ public class BoardRenderer {
             }
             
         }
-
+        
         // let all the creatures take their turns
+        adPrint.append("\nTotal active creatures: "  + (creatures.size()) + "\n Creatures       Room"); // string construction
+        creatures.removeIf(x-> x.alive.equals(false));// remove dead creatures from array
+        if(creatures.size() == 0){
+            deadCreatures = 12; // end game if all creatures are dead.
+        }
         for (Creature creature: creatures) {
             if(creature.alive) {
+
+                adPrint.append( "\n" + creature.toString()+"          "+creature.currentRoom.id); ///
                 creature.addPCL(log);  // Instantiate a Logger
                 log.updateTurn(turnsTaken);  // Call Adventurer's public takeTurn() method
                 creature.takeTurn();  // Remove the Logger
                 creature.removePCL(log);
                 gameOver = false; // The game is not over if there is still an Adventurer alive
             } else {
+                
                 deadCreatures++;
             }
         }
@@ -89,6 +105,8 @@ public class BoardRenderer {
 
 
         System.out.println("--------------------------------------------");
+
+        support.firePropertyChange(String.valueOf(turnsTaken) ,adPrint, String.valueOf((4 -deadAdventurers)));
     }
 
     public void displayGameState() {
@@ -290,6 +308,15 @@ public class BoardRenderer {
         tempBlinker.currentRoom = getRoomByID(roomID);
         tempBlinker.type = "B";
         creatures.add(tempBlinker);
+    }
+
+    public void addPCL(PropertyChangeListener pcl){
+        support.addPropertyChangeListener(pcl);
+    }
+
+    public void removePCL(PropertyChangeListener pcl){
+        support.removePropertyChangeListener(pcl);
+        
     }
 
 }

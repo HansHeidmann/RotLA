@@ -1,0 +1,30 @@
+Sneaker enters room 4-1-1
+Thief enters room 3-1-0
+Orbiter enters room 4-1-2
+Orbiter enters room 4-1-2
+Sneaker enters room 1-1-0
+Seeker stays in room 3-1-0
+Sneaker enters room 2-0-0
+Orbiter enters room 4-2-0
+Sneaker enters room 2-1-1
+Seeker stays in room 4-0-2
+Sneaker enters room 2-1-1
+Sneaker enters room 4-1-1
+Thief enters room 4-0-2
+Sneaker enters room 4-0-0
+Orbiter enters room 4-2-0
+Seeker stays in room 3-2-1
+Brawler enters room 1-0-1
+Seeker stays in room 4-0-2
+Runner enters room 2-0-1
+Runner enters room 2-0-0
+Thief enters room 1-1-2
+Orbiter enters room 4-0-1
+Thief enters room 2-0-2
+Seeker stays in room 3-1-0
+Orbiter enters room 3-2-2
+Seeker stays in room 4-2-0
+Orbiter enters room 4-2-0
+Seeker stays in room 4-0-1
+Orbiter enters room 3-2-0
+Thief enters room 2-1-1

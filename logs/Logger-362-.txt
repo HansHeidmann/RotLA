@@ -1,0 +1,4 @@
+Sneaker enters room 3-0-0
+Thief enters room 2-1-2
+Seeker stays in room 3-1-0
+Sneaker enters room 4-2-1

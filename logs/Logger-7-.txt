@@ -1,0 +1,746 @@
+Orbiter enters room 1-2-1
+Blinker enters room 3-0-1
+Orbiter enters room 4-1-2
+Blinker enters room 3-1-2
+Seeker stays in room 4-2-0
+Brawler enters room 2-1-1
+Sneaker enters room 2-0-2
+Runner enters room 1-0-2
+Runner enters room 1-0-1
+Thief enters room 2-0-2
+Orbiter enters room 3-0-0
+Blinker enters room 1-2-2
+Orbiter enters room 4-1-2
+Orbiter enters room 4-0-1
+Seeker stays in room 2-0-2
+Blinker enters room 4-1-1
+Seeker stays in room 4-1-1
+Sneaker enters room 1-1-0
+Thief enters room 1-2-1
+Orbiter enters room 4-1-2
+Seeker stays in room 3-0-2
+Seeker enters room 2-2-1
+Brawler defeats Seeker
+Brawler Jumped, and Jumped
+Seeker has  Died
+Blinker enters room 3-1-1
+Orbiter enters room 2-1-0
+Seeker stays in room 3-1-0
+Blinker enters room 2-1-0
+Orbiter enters room 4-1-2
+Blinker enters room 2-1-2
+Brawler enters room 2-2-0
+Sneaker enters room 1-1-0
+Runner enters room 1-2-0
+Runner enters room 1-1-0
+Thief enters room 1-2-1
+Orbiter enters room 3-2-2
+Blinker enters room 3-0-2
+Orbiter enters room 4-2-1
+Seeker stays in room 3-2-0
+Brawler enters room 2-0-0
+Sneaker enters room 2-0-2
+Sneaker found a Portal
+Runner enters room 1-0-2
+Runner enters room 1-0-1
+Thief enters room 1-0-1
+Orbiter enters room 4-1-0
+Seeker stays in room 4-2-1
+Blinker enters room 2-2-1
+Orbiter enters room 2-2-0
+Blinker enters room 2-0-2
+Orbiter enters room 3-0-2
+Seeker stays in room 4-1-1
+Blinker enters room 3-1-1
+Orbiter enters room 3-2-1
+Blinker enters room 2-0-0
+Brawler enters room 1-0-1
+Sneaker enters room 2-0-0
+Thief enters room 1-1-2
+Orbiter enters room 1-2-0
+Orbiter enters room 3-2-1
+Seeker stays in room 4-0-0
+Blinker enters room 4-1-1
+Orbiter enters room 4-0-1
+Seeker stays in room 3-2-1
+Brawler enters room 2-0-2
+Sneaker enters room 1-2-1
+Runner enters room 2-1-2
+Runner enters room 2-1-1
+Runner found a Armor
+Thief enters room 1-0-1
+Seeker stays in room 2-0-0
+Blinker enters room 4-1-0
+Orbiter enters room 3-0-0
+Seeker stays in room 4-2-1
+Blinker enters room 1-0-2
+Seeker stays in room 2-2-2
+Blinker enters room 1-1-2
+Brawler enters room 2-1-1
+Sneaker enters room 1-1-2
+Sneaker defeats Blinker
+Sneaker Shouted, and Danced
+Blinker has Died
+Orbiter enters room 3-2-0
+Seeker stays in room 3-0-1
+Blinker enters room 2-0-0
+Orbiter enters room 4-0-2
+Orbiter enters room 3-0-1
+Seeker stays in room 4-0-0
+Blinker enters room 2-2-2
+Seeker stays in room 1-0-1
+Brawler enters room 1-1-0
+Sneaker enters room 1-2-1
+Sneaker took 1 damage
+Orbiter enters room 4-2-0
+Seeker stays in room 4-2-1
+Blinker enters room 1-1-2
+Orbiter enters room 4-0-1
+Seeker stays in room 3-2-2
+Orbiter enters room 3-2-0
+Blinker enters room 2-0-2
+Orbiter enters room 2-0-0
+Blinker enters room 2-0-2
+Brawler enters room 1-2-1
+Brawler found a Armor
+Runner enters room 1-0-2
+Runner enters room 1-1-2
+Runner defeats Blinker
+Runner Spun
+Blinker has Died
+Thief enters room 2-1-1
+Orbiter enters room 2-1-0
+Seeker stays in room 4-0-2
+Orbiter enters room 3-0-0
+Seeker enters room 3-1-1
+Thief defeats Seeker
+Seeker has  Died
+Blinker enters room 4-2-2
+Seeker stays in room 4-1-0
+Orbiter enters room 3-0-0
+Brawler enters room 1-0-1
+Sneaker enters room 1-1-2
+Thief enters room 3-1-0
+Thief found a Portal
+Orbiter enters room 4-2-0
+Seeker stays in room 4-1-1
+Blinker enters room 1-0-2
+Seeker stays in room 4-1-1
+Blinker enters room 1-2-2
+Brawler enters room 2-1-1
+Sneaker enters room 1-1-2
+Thief enters room 1-2-1
+Seeker stays in room 2-2-0
+Blinker enters room 1-2-2
+Thief defeats Blinker
+Thief Danced, and Spun
+Blinker has  Died
+Orbiter enters room 4-2-2
+Blinker enters room 2-1-0
+Orbiter enters room 2-1-0
+Blinker enters room 3-1-2
+Orbiter enters room 3-0-0
+Blinker enters room 2-2-1
+Brawler enters room 3-1-2
+Brawler took 1 damage
+Sneaker enters room 1-1-0
+Runner enters room 1-2-0
+Runner enters room 1-1-0
+Runner found a Trap
+Runner took 1 Damage from a Trap
+Thief enters room 1-1-2
+Orbiter enters room 3-2-2
+Seeker stays in room 2-2-2
+Seeker stays in room 4-1-0
+Orbiter enters room 2-0-2
+Blinker enters room 2-0-1
+Brawler enters room 1-1-2
+Sneaker enters room 1-1-2
+Runner enters room 1-0-2
+Runner enters room 1-1-2
+Thief enters room 2-1-1
+Seeker stays in room 3-2-0
+Seeker enters room 3-1-1
+Sneaker defeats Seeker
+Seeker has  Died
+Blinker enters room 2-1-0
+Orbiter enters room 3-2-2
+Orbiter enters room 3-1-0
+Brawler enters room 2-1-1
+Sneaker enters room 3-1-0
+Sneaker defeats Orbiter
+Sneaker Danced
+Orbiter has Died
+Runner enters room 2-1-0
+Runner defeats Blinker
+Runner Shouted
+Blinker has Died
+Runner enters room 2-1-1
+Thief enters room 2-0-0
+Orbiter enters room 3-2-1
+Orbiter enters room 3-2-2
+Blinker enters room 3-0-1
+Seeker stays in room 4-0-2
+Blinker enters room 1-1-1
+Orbiter enters room 3-0-0
+Blinker enters room 4-2-0
+Brawler enters room 1-1-2
+Sneaker enters room 1-1-2
+Runner enters room 2-0-1
+Runner enters room 2-1-1
+Thief enters room 1-1-2
+Orbiter enters room 3-2-2
+Seeker stays in room 4-1-2
+Seeker stays in room 2-2-1
+Blinker enters room 3-2-2
+Orbiter enters room 4-0-1
+Blinker enters room 4-2-1
+Sneaker enters room 2-1-1
+Runner enters room 1-2-0
+Runner enters room 1-2-1
+Thief enters room 1-1-2
+Runner defeats Orbiter
+Runner Shouted, and Jumped
+Orbiter has  Died
+Seeker enters room 3-1-1
+Blinker enters room 3-2-0
+Orbiter enters room 3-0-2
+Seeker stays in room 2-0-0
+Seeker enters room 3-1-1
+Seeker defeats Thief
+Thief has  Died
+Blinker enters room 4-0-0
+Orbiter enters room 4-0-0
+Seeker stays in room 4-2-0
+Blinker enters room 1-0-2
+Brawler enters room 1-1-0
+Sneaker enters room 1-1-0
+Runner enters room 2-2-1
+Runner enters room 2-2-2
+Orbiter enters room 3-1-0
+Seeker stays in room 2-2-2
+Seeker stays in room 4-1-0
+Orbiter enters room 4-2-0
+Seeker stays in room 4-0-2
+Blinker enters room 3-0-2
+Brawler enters room 1-0-1
+Sneaker enters room 1-2-1
+Runner enters room 1-1-1
+Runner enters room 2-1-1
+Thief enters room 1-1-0
+Orbiter enters room 2-0-1
+Blinker enters room 3-2-2
+Orbiter enters room 4-0-1
+Blinker enters room 3-0-0
+Orbiter enters room 3-2-2
+Blinker enters room 4-1-2
+Seeker stays in room 4-0-2
+Brawler enters room 1-1-0
+Brawler found a Gem
+Sneaker enters room 1-2-1
+Runner enters room 3-1-1
+Runner enters room 3-0-1
+Thief enters room 1-1-2
+Orbiter enters room 3-0-0
+Blinker enters room 3-0-2
+Orbiter enters room 2-1-0
+Thief defeats Orbiter
+Thief Spun
+Orbiter has  Died
+Seeker stays in room 4-2-2
+Blinker enters room 2-2-0
+Seeker stays in room 4-2-2
+Sneaker enters room 1-1-2
+Runner enters room 2-1-0
+Runner enters room 2-2-0
+Runner took 1 damage
+Thief enters room 2-2-0
+Thief defeats Blinker
+Thief Jumped
+Blinker has Died
+Orbiter enters room 3-2-2
+Blinker enters room 2-0-1
+Orbiter enters room 3-0-0
+Orbiter enters room 4-2-1
+Seeker stays in room 4-0-0
+Orbiter enters room 4-0-0
+Brawler enters room 1-0-1
+Sneaker enters room 1-0-1
+Runner enters room 2-1-0
+Runner enters room 2-0-0
+Thief enters room 1-2-1
+Seeker stays in room 3-0-2
+Blinker enters room 4-0-0
+Orbiter enters room 3-2-1
+Seeker stays in room 4-0-2
+Orbiter enters room 4-1-2
+Seeker stays in room 4-1-1
+Blinker enters room 1-1-0
+Blinker defeats Runner
+Runner has  Died
+Blinker enters room 2-0-0
+Sneaker enters room 1-2-1
+Thief enters room 1-2-1
+Blinker enters room 2-1-0
+Orbiter enters room 3-0-1
+Blinker enters room 3-0-0
+Blinker enters room 4-2-0
+Orbiter enters room 4-1-2
+Blinker enters room 3-2-2
+Brawler enters room 2-1-1
+Sneaker enters room 3-1-0
+Thief enters room 2-2-0
+Orbiter enters room 2-2-1
+Thief defeats Orbiter
+Orbiter has  Died
+Blinker enters room 4-0-1
+Orbiter enters room 3-2-0
+Blinker enters room 4-1-2
+Brawler enters room 1-0-1
+Sneaker enters room 1-2-1
+Runner enters room 2-0-1
+Runner enters room 2-1-1
+Thief enters room 2-2-2
+Thief found a Portal
+Orbiter enters room 2-2-1
+Brawler defeats Orbiter
+Brawler Jumped
+Orbiter has  Died
+Blinker enters room 2-1-2
+Orbiter enters room 3-1-2
+Seeker stays in room 4-0-1
+Blinker enters room 4-0-2
+Seeker stays in room 3-1-0
+Blinker enters room 3-1-1
+Seeker stays in room 3-2-0
+Blinker enters room 3-0-2
+Brawler enters room 2-1-1
+Sneaker enters room 1-1-2
+Seeker stays in room 2-0-2
+Seeker stays in room 2-0-2
+Blinker enters room 4-2-1
+Orbiter enters room 4-2-0
+Seeker stays in room 4-0-1
+Blinker enters room 2-1-1
+Orbiter enters room 4-1-0
+Seeker stays in room 3-2-2
+Blinker enters room 1-2-0
+Brawler enters room 1-0-1
+Sneaker enters room 1-1-2
+Thief enters room 1-2-1
+Seeker stays in room 1-1-1
+Blinker enters room 1-0-1
+Orbiter enters room 4-0-0
+Blinker enters room 2-0-1
+Blinker enters room 4-2-2
+Orbiter enters room 4-0-2
+Blinker enters room 2-2-0
+Brawler enters room 1-0-1
+Brawler took 1 damage
+Blinker defeats Brawler
+Brawler has Died
+Sneaker enters room 2-0-0
+Runner enters room 3-0-2
+Runner found a Portal
+Runner enters room 3-1-2
+Orbiter enters room 2-2-0
+Seeker stays in room 4-1-0
+Orbiter enters room 3-0-1
+Seeker stays in room 3-0-2
+Orbiter enters room 3-0-1
+Seeker stays in room 4-1-2
+Orbiter enters room 3-0-2
+Seeker stays in room 2-0-0
+Blinker enters room 2-2-0
+Brawler enters room 1-0-1
+Sneaker enters room 1-0-1
+Runner enters room 1-1-1
+Runner enters room 1-1-0
+Thief enters room 1-0-1
+Blinker enters room 4-0-2
+Orbiter enters room 3-1-2
+Blinker enters room 4-2-1
+Orbiter enters room 3-2-1
+Seeker stays in room 4-0-0
+Brawler enters room 1-2-1
+Sneaker enters room 2-1-1
+Runner enters room 1-1-1
+Runner enters room 1-1-0
+Thief enters room 2-1-1
+Orbiter enters room 3-2-1
+Seeker stays in room 3-1-2
+Blinker enters room 2-0-1
+Blinker enters room 2-1-0
+Brawler enters room 2-0-0
+Brawler found a Portal
+Sneaker enters room 1-0-1
+Runner enters room 1-2-0
+Runner enters room 1-2-1
+Thief enters room 1-2-1
+Orbiter enters room 4-0-0
+Blinker enters room 1-1-0
+Orbiter enters room 3-1-0
+Blinker enters room 4-2-2
+Seeker stays in room 4-0-1
+Orbiter enters room 4-1-2
+Sneaker enters room 1-0-1
+Runner enters room 2-1-2
+Runner enters room 2-0-2
+Thief enters room 2-0-2
+Orbiter enters room 4-2-0
+Seeker stays in room 3-0-0
+Blinker enters room 1-2-2
+Orbiter enters room 4-0-2
+Seeker enters room 4-1-0
+Thief defeats Seeker
+Seeker has  Died
+Blinker enters room 3-0-1
+Brawler enters room 2-0-0
+Sneaker enters room 2-1-1
+Thief enters room 4-0-0
+Thief found a Sword
+Orbiter enters room 4-0-1
+Seeker stays in room 2-0-0
+Blinker enters room 4-1-0
+Blinker enters room 3-2-0
+Orbiter enters room 4-0-2
+Seeker stays in room 1-2-0
+Orbiter enters room 4-0-0
+Brawler enters room 1-0-1
+Sneaker enters room 1-0-1
+Runner enters room 2-1-2
+Runner enters room 2-0-2
+Thief enters room 2-1-1
+Orbiter enters room 1-2-2
+Seeker stays in room 4-1-0
+Orbiter enters room 4-1-0
+Orbiter enters room 3-0-2
+Seeker stays in room 2-2-0
+Blinker enters room 4-2-2
+Seeker stays in room 3-0-1
+Brawler enters room 2-1-1
+Sneaker enters room 1-1-0
+Thief enters room 3-1-2
+Orbiter enters room 1-2-1
+Blinker enters room 1-0-0
+Blinker enters room 1-1-1
+Orbiter enters room 3-0-0
+Blinker enters room 3-2-1
+Orbiter enters room 4-2-1
+Sneaker enters room 2-2-0
+Runner enters room 1-1-1
+Runner took 1 damage
+Runner enters room 1-2-1
+Runner took 1 damage
+Seeker stays in room 2-0-0
+Orbiter enters room 2-2-1
+Seeker stays in room 3-2-0
+Blinker enters room 3-1-0
+Orbiter enters room 3-1-0
+Seeker stays in room 4-2-2
+Seeker stays in room 2-0-0
+Brawler enters room 1-2-1
+Sneaker enters room 1-1-2
+Runner enters room 1-0-0
+Runner enters room 1-0-1
+Thief enters room 1-0-1
+Blinker enters room 2-1-0
+Orbiter enters room 2-0-1
+Seeker stays in room 3-1-0
+Orbiter enters room 3-0-2
+Blinker enters room 4-1-1
+Orbiter enters room 3-1-2
+Blinker enters room 4-0-2
+Brawler enters room 1-1-2
+Sneaker enters room 1-1-2
+Runner enters room 1-1-1
+Runner enters room 2-1-1
+Orbiter enters room 4-2-0
+Blinker enters room 1-1-1
+Orbiter enters room 3-2-1
+Seeker stays in room 2-0-0
+Blinker enters room 3-0-1
+Orbiter enters room 3-2-0
+Seeker stays in room 1-0-0
+Blinker enters room 1-2-0
+Orbiter enters room 4-2-0
+Seeker stays in room 3-0-2
+Sneaker enters room 1-0-1
+Orbiter enters room 3-2-0
+Seeker stays in room 2-0-0
+Blinker enters room 2-0-0
+Orbiter enters room 4-0-0
+Seeker stays in room 4-2-2
+Blinker enters room 2-0-1
+Orbiter enters room 4-1-2
+Orbiter enters room 2-0-2
+Seeker stays in room 2-2-2
+Brawler enters room 1-1-0
+Brawler found a Potion
+Sneaker enters room 1-1-0
+Runner enters room 1-1-1
+Runner enters room 1-1-2
+Thief enters room 1-1-2
+Orbiter enters room 4-1-2
+Blinker enters room 4-2-1
+Orbiter enters room 4-0-0
+Seeker stays in room 2-0-2
+Blinker enters room 2-1-0
+Orbiter enters room 3-0-0
+Seeker stays in room 3-1-1
+Brawler enters room 1-1-0
+Sneaker enters room 2-1-1
+Thief enters room 1-2-1
+Seeker stays in room 1-1-0
+Blinker enters room 2-2-0
+Orbiter enters room 3-0-0
+Blinker enters room 1-0-0
+Seeker stays in room 3-2-2
+Blinker enters room 4-2-1
+Orbiter enters room 1-0-0
+Seeker stays in room 4-2-0
+Sneaker enters room 1-0-1
+Orbiter enters room 2-2-2
+Blinker enters room 1-2-0
+Orbiter enters room 3-0-0
+Blinker enters room 4-1-0
+Orbiter enters room 4-0-0
+Seeker stays in room 4-1-2
+Blinker enters room 1-2-2
+Orbiter enters room 2-2-0
+Seeker stays in room 3-0-0
+Brawler enters room 1-1-0
+Sneaker enters room 1-0-1
+Thief enters room 1-1-2
+Orbiter enters room 4-0-0
+Blinker enters room 4-0-0
+Orbiter enters room 4-1-2
+Blinker enters room 1-0-0
+Seeker stays in room 3-1-2
+Blinker enters room 3-1-2
+Blinker enters room 1-0-0
+Sneaker enters room 1-1-0
+Runner enters room 1-0-2
+Runner enters room 1-1-2
+Thief enters room 1-0-1
+Orbiter enters room 4-1-2
+Seeker stays in room 4-2-1
+Blinker enters room 4-1-0
+Orbiter enters room 4-1-2
+Seeker stays in room 3-2-0
+Orbiter enters room 3-2-0
+Seeker stays in room 3-1-0
+Blinker enters room 1-2-2
+Seeker stays in room 2-2-0
+Blinker enters room 3-1-1
+Sneaker enters room 2-1-1
+Runner enters room 2-1-0
+Runner enters room 2-1-1
+Thief enters room 1-0-1
+Seeker stays in room 4-2-2
+Orbiter enters room 1-0-1
+Seeker stays in room 4-1-1
+Blinker enters room 2-2-0
+Orbiter enters room 3-0-2
+Seeker stays in room 4-1-0
+Brawler enters room 1-1-2
+Sneaker enters room 2-1-1
+Runner enters room 2-1-2
+Runner enters room 2-2-2
+Thief enters room 2-2-2
+Seeker stays in room 4-2-1
+Blinker enters room 2-1-1
+Orbiter enters room 4-2-2
+Seeker stays in room 4-0-1
+Orbiter enters room 3-2-2
+Blinker enters room 2-1-0
+Seeker stays in room 3-1-2
+Brawler enters room 1-1-2
+Sneaker enters room 1-0-1
+Runner enters room 2-1-0
+Runner defeats Blinker
+Blinker has Died
+Runner enters room 2-1-1
+Runner defeats Blinker
+Runner Danced, and Danced
+Blinker has Died
+Thief enters room 2-1-1
+Orbiter enters room 3-1-2
+Seeker stays in room 1-0-2
+Orbiter enters room 3-1-2
+Blinker enters room 1-2-1
+Orbiter enters room 3-2-1
+Blinker enters room 2-2-2
+Brawler enters room 1-2-1
+Brawler defeats Blinker
+Brawler Jumped
+Blinker has Died
+Sneaker enters room 2-2-0
+Runner enters room 3-1-1
+Runner enters room 4-1-1
+Thief enters room 1-0-1
+Orbiter enters room 3-2-0
+Seeker stays in room 4-0-1
+Orbiter enters room 4-2-0
+Seeker stays in room 2-2-0
+Seeker stays in room 3-2-2
+Blinker enters room 4-0-2
+Orbiter enters room 2-0-2
+Seeker stays in room 4-0-1
+Brawler enters room 1-0-1
+Brawler found a Potion
+Sneaker enters room 1-0-1
+Runner enters room 1-2-0
+Runner found a Gem
+Runner enters room 1-1-0
+Thief enters room 1-1-2
+Orbiter enters room 1-0-2
+Blinker enters room 1-1-1
+Orbiter enters room 4-2-0
+Seeker stays in room 4-1-1
+Orbiter enters room 3-0-1
+Seeker stays in room 3-0-1
+Blinker enters room 2-2-0
+Brawler enters room 1-1-0
+Sneaker enters room 2-0-0
+Runner enters room 1-0-0
+Runner enters room 1-1-0
+Thief enters room 2-1-1
+Seeker stays in room 4-0-2
+Blinker enters room 1-1-1
+Seeker stays in room 2-0-0
+Blinker enters room 4-2-0
+Orbiter enters room 2-2-0
+Seeker stays in room 2-0-2
+Runner enters room 1-2-0
+Runner enters room 1-1-0
+Thief enters room 1-1-0
+Orbiter enters room 4-1-0
+Seeker stays in room 1-0-1
+Blinker enters room 3-2-0
+Seeker stays in room 3-2-2
+Orbiter enters room 4-0-0
+Blinker enters room 3-1-1
+Orbiter enters room 3-1-0
+Blinker enters room 1-0-2
+Brawler enters room 1-1-0
+Sneaker enters room 2-1-1
+Thief enters room 2-2-0
+Orbiter enters room 3-2-1
+Seeker stays in room 4-2-0
+Orbiter enters room 3-0-2
+Seeker stays in room 3-2-2
+Orbiter enters room 3-0-1
+Seeker stays in room 2-0-2
+Blinker enters room 1-1-0
+Brawler enters room 1-1-0
+Brawler defeats Blinker
+Brawler Shouted
+Blinker has Died
+Sneaker enters room 1-1-0
+Runner enters room 2-1-0
+Runner enters room 2-2-0
+Runner found a Potion
+Thief enters room 1-0-1
+Seeker stays in room 2-0-0
+Blinker enters room 2-0-1
+Orbiter enters room 4-0-1
+Seeker stays in room 3-1-0
+Blinker enters room 1-0-0
+Thief defeats Blinker
+Thief Shouted, and Shouted
+Blinker has  Died
+Seeker stays in room 3-2-1
+Orbiter enters room 3-1-2
+Blinker enters room 1-1-0
+Brawler enters room 1-2-1
+Sneaker enters room 1-0-1
+Thief enters room 1-1-0
+Thief defeats Orbiter
+Orbiter has Died
+Thief defeats Blinker
+Thief Spun
+Blinker has Died
+Seeker stays in room 4-0-0
+Blinker enters room 3-0-2
+Orbiter enters room 2-2-0
+Seeker stays in room 3-1-2
+Seeker stays in room 4-2-2
+Blinker enters room 1-0-2
+Orbiter enters room 3-2-0
+Seeker stays in room 4-2-0
+Blinker enters room 4-1-0
+Sneaker enters room 1-0-1
+Thief enters room 1-2-1
+Orbiter enters room 3-0-0
+Blinker enters room 4-1-2
+Orbiter enters room 3-2-1
+Orbiter enters room 4-0-1
+Orbiter enters room 1-0-2
+Seeker stays in room 4-0-1
+Blinker enters room 1-0-2
+Sneaker defeats Blinker
+Sneaker Jumped
+Blinker has  Died
+Sneaker enters room 1-1-2
+Runner enters room 2-1-0
+Runner enters room 2-2-0
+Thief enters room 1-0-1
+Orbiter enters room 2-1-0
+Orbiter enters room 2-2-2
+Seeker stays in room 3-0-1
+Blinker enters room 3-0-2
+Seeker stays in room 3-2-0
+Orbiter enters room 4-2-1
+Blinker enters room 3-1-0
+Brawler enters room 1-1-0
+Sneaker enters room 1-0-1
+Runner enters room 2-1-2
+Runner enters room 2-1-1
+Thief enters room 1-1-0
+Orbiter enters room 3-0-2
+Seeker stays in room 3-0-1
+Orbiter enters room 3-2-0
+Blinker enters room 1-2-1
+Orbiter enters room 2-1-0
+Blinker enters room 4-1-1
+Sneaker enters room 1-2-1
+Sneaker took 1 damage
+Runner enters room 1-2-0
+Runner enters room 1-1-0
+Runner defeats Orbiter
+Runner Jumped
+Orbiter has Died
+Thief enters room 1-2-1
+Thief took 1 damage
+Blinker defeats Thief
+Thief has Died
+Seeker stays in room 3-2-2
+Blinker enters room 4-0-0
+Orbiter enters room 2-1-2
+Seeker stays in room 3-0-0
+Orbiter enters room 2-1-2
+Seeker stays in room 3-2-1
+Blinker enters room 1-2-2
+Orbiter enters room 4-2-1
+Seeker stays in room 2-2-0
+Brawler enters room 1-1-0
+Sneaker enters room 1-2-1
+Runner enters room 1-1-1
+Runner enters room 1-1-0
+Thief enters room 1-2-1
+Thief found a Portal
+Orbiter enters room 2-2-1
+Seeker stays in room 3-1-0
+Blinker enters room 1-2-0
+Orbiter enters room 3-2-2
+Seeker stays in room 4-2-0
+Orbiter enters room 4-2-0
+Seeker stays in room 4-0-1
+Orbiter enters room 3-2-0
+Seeker stays in room 2-0-0
+Brawler enters room 1-1-0
+Sneaker enters room 1-1-2
+Runner enters room 1-0-0
+Runner enters room 1-1-0
+Thief enters room 1-0-1
