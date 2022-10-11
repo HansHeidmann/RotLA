@@ -2,8 +2,9 @@
 /// Seeker -> SUBCLASS of Creature
 ///
 public class Seeker extends Creature {
-    public Seeker() {
-        //
+    public Seeker(String type, Room spawnRoom) {
+        this.type = type;
+        this.currentRoom = spawnRoom;
     }
     public void move() {
         if(currentRoom.adventurers.size() == 0) {

@@ -3,7 +3,10 @@
 ///
 public class Orbiter extends Creature {
     private final Integer direction;  // 0 - clockwise, 1 - counter-clockwise
-    public Orbiter() {
+    public Orbiter(String type, Room spawnRoom) {
+        this.type = type;
+        this.currentRoom = spawnRoom;
+
         direction = (int)(Math.random() * 2);
     }
 

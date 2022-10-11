@@ -2,8 +2,11 @@
 /// Runner -> SUBCLASS of Adventurer
 ///
 public class Runner extends Adventurer {
-    public Runner() {
-        //
+    public Runner(String type, CombatAlgorithm combatStrategy, SearchAlgorithm searchStrategy, Room currentRoom) {
+        this.type = type;
+        this.combatStrategy = combatStrategy;
+        this.searchStrategy = searchStrategy;
+        this.currentRoom = currentRoom;
     }
     public void takeTurn() {
         // take 2 turns

@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76528078-6a94-4564-a4dc-334738339c6b" name="Changes" comment="All done! Prints board with Tracker each turn and matches up with Logger log files" />
+    <list default="true" id="76528078-6a94-4564-a4dc-334738339c6b" name="Changes" comment="done">
+      <change afterPath="$PROJECT_DIR$/src/JUnitTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RotLA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RotLA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blinker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blinker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoardRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Brawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Brawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Orbiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Orbiter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Seeker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Seeker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sneaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sneaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Thief.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Thief.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -21,6 +34,7 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -33,16 +47,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/hansh/Downloads/BruceProject2JavaFiles&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "C:/Users/hansh/Downloads/BruceProject2JavaFiles"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
   </component>
@@ -66,6 +93,8 @@
       <workItem from="1664934738251" duration="820000" />
       <workItem from="1664981354759" duration="10967000" />
       <workItem from="1665013455926" duration="9076000" />
+      <workItem from="1665507803622" duration="73000" />
+      <workItem from="1665520399265" duration="7285000" />
     </task>
     <task id="LOCAL-00001" summary="getting started">
       <created>1663442302275</created>
@@ -137,7 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665035403139</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="done">
+      <created>1665035993549</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665035993549</updated>
+    </task>
+    <task id="LOCAL-00012" summary="done">
+      <created>1665036207571</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665036207571</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +209,10 @@
     <MESSAGE value="Decorator done" />
     <MESSAGE value="Comments for Patterns Added [for grader(s)]" />
     <MESSAGE value="All done! Prints board with Tracker each turn and matches up with Logger log files" />
-    <option name="LAST_COMMIT_MESSAGE" value="All done! Prints board with Tracker each turn and matches up with Logger log files" />
+    <MESSAGE value="done" />
+    <option name="LAST_COMMIT_MESSAGE" value="done" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/RotLA$JUnitTests.ic" NAME="JUnitTests Coverage Results" MODIFIED="1665522478116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -2,8 +2,9 @@
 /// Blinker -> SUBCLASS of Creature
 ///
 public class Blinker extends Creature {
-    public Blinker() {
-        //
+    public Blinker(String type, Room spawnRoom) {
+        this.type = type;
+        this.currentRoom = spawnRoom;
     }
     public void move() {
         gotoRoom(1 + (int) (Math.random() * 4), (int) (Math.random() * 3), (int) (Math.random() * 3));

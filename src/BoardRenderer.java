@@ -190,6 +190,7 @@ public class BoardRenderer {
         String roomID;
         Room room;
 
+        // place 4 of each kind of treasure
         for (int i=0; i<4; i++) {
             for (int kind = 0; kind < 6; kind++) {
                 // prepare room vars
@@ -223,46 +224,24 @@ public class BoardRenderer {
     }
     private void spawnAdventurers() {
         Room groundLevelRoom = getRoomByID("0-1-1");
+
         // Brawler
-        Adventurer brawler = new Brawler();
-        brawler.currentRoom = groundLevelRoom;
-        brawler.type = "B";
-        brawler.combatStrategy = new ExpertStrategy();
-        brawler.searchStrategy = new CarelessStrategy();
-       // brawler.addPCL(log);
+        Adventurer brawler = new Brawler("B", new ExpertStrategy(), new CarelessStrategy(), groundLevelRoom);
         adventurers.add(brawler);
         brawler.currentRoom.addAdventurer(brawler);
 
-        // Sneaker
-        Adventurer sneaker = new Sneaker();
-        sneaker.currentRoom = groundLevelRoom;
-        sneaker.type = "S";
-        sneaker.combatStrategy = new StealthStrategy();
-        sneaker.searchStrategy = new QuickStrategy();
-        adventurers.add(sneaker);
-        sneaker.currentRoom.addAdventurer(sneaker);
-
-//        CombatAlgorithm combatAlgorithm = new StealthStrategy();
-//        brawler.combatStrategy = combatAlgorithm;
-//        SearchAlgorithm searchAlgorithm = new QuickStrategy();
-//        brawler.searchStrategy = searchAlgorithm;
-
         // Runner
-        Adventurer runner = new Runner();
-        runner.currentRoom = groundLevelRoom;
-        runner.type = "R";
-        runner.combatStrategy = new UntrainedStrategy();
-        runner.searchStrategy = new QuickStrategy();
+        Adventurer runner = new Runner("R", new UntrainedStrategy(), new QuickStrategy(), groundLevelRoom);
         adventurers.add(runner);
         runner.currentRoom.addAdventurer(runner);
 
+        // Sneaker
+        Adventurer sneaker = new Sneaker("S", new StealthStrategy(), new QuickStrategy(), groundLevelRoom);
+        adventurers.add(sneaker);
+        sneaker.currentRoom.addAdventurer(sneaker);
 
         // Thief
-        Adventurer thief = new Thief();
-        thief.currentRoom = groundLevelRoom;
-        thief.type = "T";
-        thief.combatStrategy = new TrainedStrategy();
-        thief.searchStrategy = new CarefulStrategy();
+        Adventurer thief = new Thief("T", new TrainedStrategy(), new CarefulStrategy(), groundLevelRoom);
         adventurers.add(thief);
         thief.currentRoom.addAdventurer(thief);
     }
@@ -279,7 +258,27 @@ public class BoardRenderer {
     private void spawnOrbiter() {
         // Orbiter - starts in a non-center room and orbits (moves circularly clockwise or counter-clockwise) around outer rooms, doesn't move if in room with adventurer
         // each instance of Orbiter has its own IDENTITY even though it has identical attributes and methods
-        Creature tempOrbiter = new Orbiter();
+        Creature tempOrbiter = new Orbiter("O", newOrbiterRoom());
+        creatures.add(tempOrbiter);
+        tempOrbiter.currentRoom.addCreature(tempOrbiter);
+    }
+
+    private void spawnSeeker() {
+        // Seeker - starts in any random room on the 4 levels, move to join any *adjacent adventurer on their floor. Will not move if no adjacent adventurer or adventurer is already in their room
+        // each instance of Seeker has its own IDENTITY even though it has identical attributes and methods
+        Creature tempSeeker = new Seeker("S", newSeekerRoom());
+        creatures.add(tempSeeker);
+        tempSeeker.currentRoom.addCreature(tempSeeker);
+    }
+    private void spawnBlinker() {
+        // Blinker - always start on level 4 in random room, move randomly to any room in all 4 levels each turn, will not move if in room with adventurer
+        // each instance of Blinker has its own IDENTITY even though it has identical attributes and methods
+        Creature tempBlinker = new Blinker("B", newBlinkerRoom());
+        creatures.add(tempBlinker);
+        tempBlinker.currentRoom.addCreature(tempBlinker);
+    }
+
+    public Room newOrbiterRoom() {
         int y = (int)(Math.random() * 4) + 1;
         int x = (int)(Math.random() * 3);
         int z;
@@ -289,37 +288,24 @@ public class BoardRenderer {
             z = (int)(Math.random() * 3);
         }
         String roomID = y + "-" + x + "-" + z;
-        tempOrbiter.currentRoom = getRoomByID(roomID);
-        tempOrbiter.type = "O";
-        creatures.add(tempOrbiter);
-        tempOrbiter.currentRoom.addCreature(tempOrbiter);
+
+        return getRoomByID(roomID);
     }
 
-    private void spawnSeeker() {
-        // Seeker - starts in any random room on the 4 levels, move to join any *adjacent adventurer on their floor. Will not move if no adjacent adventurer or adventurer is already in their room
-        // each instance of Seeker has its own IDENTITY even though it has identical attributes and methods
-        Creature tempSeeker = new Seeker();
+    public Room newSeekerRoom() {
         int y = (int)(Math.random() * 4) + 1;
         int x = (int)(Math.random() * 3);
         int z = (int)(Math.random() * 3);
         String roomID = y + "-" + x + "-" + z;
-        tempSeeker.currentRoom = getRoomByID(roomID);
-        tempSeeker.type = "S";
-        creatures.add(tempSeeker);
-        tempSeeker.currentRoom.addCreature(tempSeeker);
+        return getRoomByID(roomID);
     }
-    private void spawnBlinker() {
-        // Blinker - always start on level 4 in random room, move randomly to any room in all 4 levels each turn, will not move if in room with adventurer
-        // each instance of Blinker has its own IDENTITY even though it has identical attributes and methods
-        Creature tempBlinker = new Blinker();
+
+    public Room newBlinkerRoom() {
         int y = 4;
         int x = (int)(Math.random() * 3);
         int z = (int)(Math.random() * 3);
         String roomID = y + "-" + x + "-" + z;
-        tempBlinker.currentRoom = getRoomByID(roomID);
-        tempBlinker.type = "B";
-        creatures.add(tempBlinker);
-        tempBlinker.currentRoom.addCreature(tempBlinker);
+        return getRoomByID(roomID);
     }
 
     public void addPCL(PropertyChangeListener pcl){
